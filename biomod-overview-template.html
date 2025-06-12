@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		nckuonawebsite
+		</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Hanalei&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+		<link rel="Shortcut Icon" type="image/x-icon" href="img/bluesub.ico" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+		<style type="text/css">
+		
+		
+		body{
+		background:url(img/bg.jpg) ;
+		background-size:cover;
+		background-attachment:fixed;
+		}
+		
+		@media all and (-ms-high-contrast:none){
+		body{
+		background:url(img/bg-1.png);		
+		background-size:cover;
+		background-attachment:fixed;		
+		}
+		}
+		.container{
+		margin-top:0px;
+		padding:0px;
+		background:white;
+		width:100%;
+		background:transparent;
+		}
+		
+		.contents{
+		background:white;
+		margin-bottom:5em;}
+		
+		#contents{
+		padding-right:0.8em;
+		padding-left:0.8em;
+		padding-top:0;
+		margin-top:0em;}
+		
+		#header{
+		height:20%;}
+		
+		#footer{
+		color:white;
+		font-family: 'Exo 2', sans-serif;
+		text-align:center;
+		}
+
+		#header{
+		font-family: 'Exo 2', sans-serif;
+		text-align:left;
+		}
+		
+		h2{
+		font-family: 'Abril Fatface', cursive;}
+				
+		#submarine-head{		
+		padding:0px;
+		margin:0;}
+		
+		#submarine-bottom{
+		padding:0px;
+		margin:0;}
+		
+		.navbar navbar-expand-lg navbar-light bg-light{
+		margin:0;}
+		
+		img{		
+		width:100%;
+		padding:1em;
+		margin:0.8px;
+		text-align:center;
+		}
+		
+		#logo{		
+		width:100%;
+		padding:1em;
+		margin:0.8px;
+		text-align:center;
+		margin-right:0.4em;
+		}
+		
+		/* Style the sidenav links and the dropdown button */
+		.sidenav a {
+		  padding: 4px 8px 6px 1px;
+		  text-decoration: none;
+		  font-size: 1.3em;
+		  font-family: 'Oswald', sans-serif;
+		  
+		  color: #FFFFFF;
+		  display: block;
+		  border: none;
+		  background: none;
+		  width: 100%;
+		  text-align: left;
+		  cursor: pointer;
+		  outline: none;
+		  text-align:left;
+		}
+		
+		.dropdown-btn {
+		  padding: 5px 8px 6px 9px;
+		  text-decoration: none;
+		  font-size: 1.3em;
+		  color: #FFFFFF;
+		  display: block;
+		  border: none;
+		  background: none;
+		  width: 100%;
+		  text-align: left;
+		  cursor: pointer;
+		  outline: none;
+		  text-align:left;
+		  font-family: 'Oswald', sans-serif;
+		}
+		
+		.sidenav-head{
+		height:23%;}
+		
+		/* On mouse-over */
+		.sidenav a:hover, .dropdown-btn:hover {
+		  color: #FFFFFF;
+		  font-weight:bold;
+		}
+
+		/* Main content */
+		.main {
+		  margin-left: 200px; /* Same as the width of the sidenav */
+		  font-size: 20px; /* Increased text to enable scrolling */
+		  padding: 0px 10px;
+		}
+		
+		
+		/* Add an active class to the active dropdown button */
+		.active {
+		  background-color:;
+		  color: white;
+		}
+
+		/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+		.dropdown-container {
+		  display: none;
+		  background-color: #262626;
+		  padding-left: 8px;
+		}
+		
+		/* Optional: Style the caret down icon */
+		.fa-caret-down {
+		  float: right;
+		  padding-right: 5px;
+		  padding-top:0px;
+		  margin-top:0px;
+		}
+		
+		
+		
+		.button{background: transparent;
+			margin:0px;
+			margin-left:0;
+			width:100%;
+			height:7%;
+			text-align:left;
+			text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.9);
+			border-right:2px white solid;
+			border-left:2px white solid;
+			
+			border-top:1px white solid;
+			border-bottom:2px white solid;
+			
+			
+			transition: 0.5s;
+			position: relative;
+			overflow: hidden;
+		}
+		
+		
+		
+		.button:hover {
+			
+			text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.9);
+			background:rgba(255,255,255,0.5);
+			
+		}
+
+		.button::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to right, transparent, white, transparent);
+			left: -100%;
+			transition: 0.5s;
+		}
+		
+		
+		
+		
+		
+		.glow {
+		  font-size: 80px;
+		  font-weight:bold;
+		  color: #DDDDDD;
+		  text-align: center;
+		  -webkit-animation: glow 1s ease-in-out infinite alternate;
+		  -moz-animation: glow 1s ease-in-out infinite alternate;
+		  animation: glow 1s ease-in-out infinite alternate;
+		}
+
+		@-webkit-keyframes glow {
+		  from {
+			text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff,0 0 5px #fff;
+		  }
+		  
+		  to {
+			text-shadow: 0 0 6px #fff, 0 0 7px #00BBFF, 0 0 8px #00BBFF ,0 0 9px #00BBFF,0 0 10px #00BBFF;
+		  }
+		}
+
+		
+		
+		.row{
+		padding-right:0.8em;
+		padding-left:0.8em;
+		margin-button:0.8em;}
+		
+		.legend{
+		margin:0.25em;
+		padding:0.25em;}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/* Some media queries for responsiveness */
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;
+		  }
+		  .sidenav a {font-size: 18px;}
+		 }
+		 
+		
+		
+		@media only screen and (max-width:768px){
+		.sidenav{
+		  display:block;
+		  height: 100%;
+		  width:16.7%;
+		  position: absolute;
+		  z-index: 1;
+		  top: 0%;
+		  left: 0;
+		  overflow-x:hidden;		  
+		  background:linear-gradient(to right,rgba(68,68,68),rgba(136,136,136));}
+		}
+		
+		@media only screen and (min-width:768px){
+		.sidenav {
+		  height: 100%;
+		  width:16.7%;
+		  position: fixed;
+		  z-index: 1;
+		  top: 20%;
+		  left: 0;		  
+		  overflow-x:hidden;		  
+		  background:transparent;
+		}
+		}
+		
+		@media only screen and (min-width:990px){
+		#name-of-project{font-family: 'Montserrat', sans-serif;
+		font-size:5em; text-align:center;
+
+		}
+		}
+		
+		@media only screen and (max-width:990px){
+		#name-of-project{font-family: 'Montserrat', sans-serif;
+		font-size:3.2em; text-align:center;
+		}
+		}
+		
+		@media only screen and (min-width:990px){
+		#info{
+		font-size:1em;
+		padding-left:30px;
+		color:#DDDDDD;
+		margin-top:1.0em;}
+		}
+		
+		@media only screen and (max-width:990px){
+		#info{
+		font-size:0.75em;
+		padding-left:30px;
+		color:#DDDDDD;
+		margin-top:1.0em;}
+		}
+		
+		@media only screen and (min-width:990px){
+		.navbar-brand{
+		font-family: 'Montserrat', sans-serif;
+		color:white;
+		font-weight:bold;
+		font-size:2.5em;}
+		}
+		
+		@media only screen and (min-width:990px){
+		.nav-link{
+		font-family: 'Montserrat', sans-serif;
+		font-weight:light;
+		font-size:1.6em;}
+		}
+		
+		/*以下每個網頁都要*/
+		@media only screen and (max-width:990px){
+		.navbar-brand{
+		font-family: 'Montserrat', sans-serif;
+		color:white;
+		font-weight:bold;
+		font-size:2.5em;}
+		}
+		
+		@media only screen and (max-width:990px){
+		.nav-link{
+		font-family: 'Montserrat', sans-serif;
+		font-weight:light;
+		font-size:1.6em;}
+		}
+		
+			@media only screen and (min-width:990px){
+		#overview-intro{		
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:4.0em;
+		margin:0.8em;}
+		}
+		
+		@media only screen and (max-width:990px) and (min-width:400px){
+		#overview-intro{
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:2.5em;
+		margin:0.8em;}
+		}
+		
+		@media only screen and (max-width:400px){
+		#overview-intro{
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:1.8em;
+		margin:0.8em;}
+		}
+		
+		
+		
+		.navbar{
+		overflow-y:visible;}
+		
+		#info a{
+		color:#DDDDDD;}
+		
+		.subnavdiv{
+		margin-top:0.5em;}
+		
+		
+		#loader{
+		position:fixed;
+		z-index:10000;
+		width:100%;
+		height:100%;		
+		background:rgba(0,0,0,0.6);		
+		top:50%;
+		left:50%;		
+		transform:translate(-50%,-50%);
+		transition: 0s;
+		}
+		
+		#loader img{
+		position:absolute;
+		width:100px;
+		height:100px;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		}
+		
+		.table{
+		width:100%;
+		padding:2em;}
+		
+		@media only screen and (max-width:1200px) and (min-width:768px){
+		table{
+		font-size:0.8em;}
+		}
+		
+		@media only screen and (max-width:767px) and (min-width:450px){
+		table{
+		font-size:0.5em;}
+		}
+		
+		@media only screen and (max-width:449px){
+		table{
+		font-size:0.3em;}
+		}
+		
+		@media only screen and (min-width:768px){
+		#overview-RWD{display:none;
+		}}
+		
+		@media only screen and (max-width:768px){
+		#overview-laptop{display:none;
+		}}
+		
+		@media only screen and (min-width:1250px){
+		#navbarNavAltMarkup{
+		font-size:1.0em;}
+		}
+		
+		@media only screen and (min-width:768px) and (max-width:1249px) {
+		#navbarNavAltMarkup{
+		font-size:0.70em;}
+		}
+		.dropdown-item:hover{
+		background:#00BBFF;
+		color:white;
+		font-weight:bold;
+		}
+		
+		@media only screen and (min-width:1250px){
+		#navbarNavAltMarkup{
+		font-size:1.0em;}
+		
+		.row{
+		margin-top:1.3em;}
+		
+		@media only screen and (min-width:768px){
+		#exp-RWD{display:none;
+		}}
+		
+		
+		
+		</style>
+		
+		
+		
+	</head>
+	<body id="home" style=cursor:url(img/whitesub.cur),auto;>
+	<div id="loader">
+	<img src="img/subgif.gif"/>
+	</div>
+	
+	<div class="container-fluid">
+	<div class="row">
+	<div class="col-md-2">
+		
+		<div class="sidenav">
+		  <div class="subnavdiv">
+		  <div class="sidenav-head"><img src="img/subhead.png" class="img-fluid" id="submarine-head" /></div>
+		  <button class="button"><a href="#introduction">Introduction</a></button>
+		  <button class="button"><a href="#cross-linkers">Cross-linkers</a></button>
+		  <button id="dropdown" class="dropdown-btn button">Validation in vitro 
+			<i class="fa fa-caret-down fa-2x"></i>
+		  </button>
+		  
+		  <div class="dropdown-container">
+			<a href="#anticancer">Anti-cancer drug carrier</a>
+			<a href="#enzymes">Enzymes</a>
+			<a href="#vaccines">Vaccines</a>
+		  </div>
+		  <button class="button"><a href="#reference">Reference</a></button>
+		  
+		 
+		  <div class="sidenav-bottom"><img src="img/subbuttom.png" class="img-fluid" id="submarine-bottom" /></div>
+		</div>
+		</div>
+		
+	
+	</div>
+	
+	<div class="col-12 col-md-10 ">
+	
+	
+	
+	
+	<div  class="container ">
+	
+		<header id="header">
+		
+		<div class="header">
+		
+				<div class="row d-flex  align-items-center" >
+					
+					<div class="col-12 col-md-4"><a href="./index.html"><img src="img/sign-high.png" id="logo"   class="img-fluid" width="400px"></a></div> <!--team logo於header左邊-->
+					<p id="name-of-project" class="col-12 col-md-4 glow">NCKU ONA</p>
+					
+					<dl id="info" class="col-12 col-md-4">
+					
+						<dt><i class="far fa-envelope fa-2x"></i></dt><dd><a href="mailto:weichenlin28571653@gmail.com">biomodnckuona@gmail.com</a></dd>
+						<dt><i class="fas fa-home fa-2x"></i></dt><dd>No.1, University Road, East District, Tainan, Taiwan 701 </dd>
+					
+					</dl>
+					
+					
+				</div>
+		</div>
+			
+		</header>
+		
+		<div class="contents" style="cursor:default;">
+		
+		
+		<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+			  <a class="navbar-brand" href="#home">BIOMOD</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="./index.html">Home</a>
+					<a class="nav-item nav-link " href="./biomod-video-template.html">Video</a>
+					<a class="nav-item nav-link " id="overview-laptop" href="./biomod-overview-template.html">Overview</a>
+					
+					<li class="nav-item dropdown" id="overview-RWD">
+					<a class=" nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Overview
+					</a>				
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <a class="dropdown-item" href="#introduction">Introduction</a>
+					  <a class="dropdown-item" href="#cross-linkers">Cross-Linkers</a>
+					  <a class="dropdown-item" href="#validation-in-vitro">Validation in vitro</a>
+					</div>
+					</li>
+					
+					<li class="nav-item dropdown" >
+					<a class=" nav-link  dropdown-toggle" href= id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Lab
+					</a>				
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					 <a class="dropdown-item" href="./biomod-exp-operation-template.html">Lab-Operation</a>
+					  <a class="dropdown-item" href="./biomod-exp-result-template.html">Lab-Results</a>
+					</div>
+					</li>
+					
+					<a class="nav-item nav-link" href="./biomod-future-template.html">Future</a>
+					<a class="nav-item nav-link" href="./biomod-team-template.html">Members</a>
+					<a class="nav-item nav-link" href="./biomod-sponsors-template.html" >Sponsors</a>
+					
+				</div>
+			  </div>
+		</nav>
+	
+		
+		
+	
+		
+		
+		
+		
+					
+		
+		<div id="contents" >
+				
+					<main id="main">
+							
+							<div class="row">
+							<div class="col-12">
+							<p id="overview-intro">Overview</p>
+							</div>
+							</div>
+							
+							<section id="introduction">
+							<div class="row">
+							<div class="col-12">
+							<h3>1. Introduction</h3>
+							</div>
+							</div>
+							
+							
+							
+							<div class="row">
+							<div class="col-12">
+							<p>Deoxyribonucleic Acid (DNA) is composed of two molecular chains that coil repeatedly and is the most common genome carrier in all forms of life. A single unit of DNA is defined as a nucleotide, which is composed of one nucleobase, a deoxyribose sugar and a phosphate group. The two strands of DNA are kept together in a double helix formation by means of hydrogen bonds between 4 kinds of nucleobases, ATCG, as seen in the diagram. A single strand of DNA is composed of nucleotides that are connected to one another by their respective phosphate groups: a result of a condensation reaction. </p>
+						
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12 col-md-6">
+							<img src="img/ov-1.png"/>
+							</div>
+							</div>
+							
+							
+							<div class="row">
+							<div class="col-12">							
+							<p>When we unwind the double-helix structure into single strand form, the two amphiphilic molecular chains with hydrophobic nucleobases and a hydrophilic phosphate backbone are released. In our experiments, we use ultrasound waves to break linear DNA into smaller pieces that can easily connect  to one another after cross-linkers are added to the pool. Incidentally, ultrasound waves also help maintain a structural cavity, as we will elaborate on later. Cross-linkers serve as bridges that create strong covalent bonds between the fragments of DNA, turning linear forms into continuous reticular surfaces. If we then add surfactants, we can trigger emulsification, commanding the DNA to take a spherical structure. The proportion of oil and water we use will determine whether the spherical structure is oil-covering-water or water-covering-oil. This allows the DNA nanoparticle to carry either water soluble or lipid soluble drugs/enzymes, enabling its use as a biological vector in the human body.</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12 col-md-6">
+							<img src="img/ov-2.png" style="padding:1em;"/>
+							</div>
+							</div>
+							
+							
+							<div class="col-12">
+								<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+							</div>
+							
+							
+							</section>
+							
+							<section id="cross-linkers">
+							<div class="row">
+							<div class="col-12">
+							<h3>2. Cross-Linkers</h3>
+							</div>
+							</div>
+							
+							
+							
+							<div class="row">
+							<div class="col-12">
+							<h5><i>2-1. DTSSP</i></h5>					
+							</div>
+							</div>
+							
+							
+							
+							<div class="row">
+							<div class="col-12">	
+							<p>DTSSP is a crosslinker that contains an amine-reactive N-hydroxysulfosuccinimide (sulfo-NHS). Sulfo-NHS esters are able to react with primary amines and form stable amide bonds at pH ranges between 7 and 9. All nucleobases except thymine have several primary amines in their structure that are available as targets for sulfo-NHS-ester crosslinking reagents. </p>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12 col-md-6">
+							<img src="img/ov-3.jpg" style="padding:0.3em;"/>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<h5><i>2-2. Genipin</i></h5>					
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p>Genipin is a chemical compound found in gardenia fruit extract. Genipin is an excellent natural cross-linker for proteins, collagen, gelatin, and chitosan cross-linking. In clinical fields, Genipin has been used to control drug delivery. In our experiments, we use Genipin as a cross-linker in vaccine and enzyme encapsulation.</p>				
+							</div>
+							</div>
+							
+							<div class="col-12">
+								<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+							</div>
+							
+							
+							</section>
+							
+							
+							<section id="validation-in-vitro" >
+							<div class="row">
+							<div class="col-12">
+							<h3>3. Validation in vitro</h3>
+							</div>
+							</div>
+							
+							
+							
+							<div id="anticancer" class="row">
+							<div class="col-12">
+							<h4><i>3-1. Anti-Cancer drug carriers: </i></h4>					
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<h5><i>(1) DNA hydrogels encapsulating DOX </i></h5>					
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p>Many point mutations that occur in cancer cells result from the error-generating activities of DNA polymerases. We can use DNA nanoparticle as an anticancer drug carrier in the form of DNA hydrogels encapsulating Doxorubicin (DOX), a chemotherapy medication used to treat cancer.</p>	
+							</div>
+							</div>
+							
+							<div class="row table">
+							
+							<table border="2" class="col-12 col-md-6">
+							
+							<tr  style="font-size:1.2em;text-align:center;" bgcolor="lightblue">
+							<td><b>Shell</b></td>
+							<td><b>DNA hydrogel / Kiwi genomic DNA</b></td>
+							</tr>
+							
+							<tr>
+							<td style="text-align:center;"><b>Protein</b></td>
+							<td>espA</td>
+							</tr>
+							
+							<tr>
+							<td style="text-align:center;"><b>Cross-linker</b></td>
+							<td>Genipin</td>
+							</tr>
+							
+							
+				
+							<tr>
+							<td style="text-align:center;"><b>Reaction</b></td>
+							<td>DNase 1</td>
+							</tr>
+							
+							<tr>
+							<td style="text-align:center;"><b>Site</b></td>
+							<td>Intestine</td>
+							</tr>
+							
+							</table>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<h5><i>(2) Doxorubicin </i></h5>					
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p>Doxorubicin (DOX) is a common drug used to treat Leukemia and Hodgkin's lymphoma, as well as bladder cancer, breast cancer and others. DOX inserts itself into DNA, which interrupts the enzyme Topoisomerase II after it relaxes DNA supercoils in preparation for transcription. Doxorubicin stabilizes Topoisomerase II to prevent DNA from turning back into a double-helix form, thus stopping over-replications in cancerous cell. Nowadays, Doxorubicin and other anticancer drugs are commonly covered by liposomes in order to transport them into the human body. Our DNA nanoparticles work with a similar idea by creating oil-covering-water molecules that enable the carrying of DOX.</p>			
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<h5><i>(3) Doxorubicin release </i></h5>					
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p>Glutathione is a tripeptide, composed of glutamic acid, cysteine and glycine.　 Glutathione exists in reduced (GSH) and oxidized (GSSG) states. The ratio of reduced glutathione to oxidized glutathione within cells acts as an indicator of whether the organism is under oxidative stress or not. In cancerous cell, the levels of GSH are much higher than in healthy cells. When DNA nanoparticle bump into cancerous cell, the GSH on the cancer cell breaks down disulfide bonds in our crosslinker, DTSSP, destroying the spherical formation of the nanoparticles. This allows the release of Doxorubicin into the target cells.</p>				
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<h5><i>(4) Selectivity </i></h5>					
+							</div>
+							</div>
+							
+							
+							<div class="row">
+							<div class="col-12">
+							<p>Ultrasound waves allow the structural cavity of the nanoparticles to remain at 100 nm during their process of arrangement. This features allows DNA nanoparticles to enter cancer cell more effectively, since this structural cavity is similar to those of cancerous cells. At the same time, they won’t affect healthy cells since these cells have a much smaller structural cavity range (around 20-30 nm).</p>	
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12 col-md-7">
+							<img src="img/exp-2.png"/>
+							</div>
+							</div>
+							
+							<div id="enzymes" class="row">
+							<div class="col-12">
+							<h4><i>3-2. Enzymes: </i></h4>					
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<h5><i>(1) Bromelain </i></h5>					
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p>Bromelain is an enzyme extract derived from the stems of pineapples. It is a type of anti-inflammatory drug that is used in sports injury, arthritis and to relieve other forms of swelling. Bromelain can also be an alternative to non-steroidal anti-inflammatory drugs.</p>			
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<h5><i>(2) Enzyme stability</i></h5>					
+							</div>
+							</div>
+							
+							
+							
+							<div class="row">
+							<div class="col-12">
+							<p>DNA nanoparticles can also be used to increase enzyme stability. We designed a DNA sequence with A, C and G at the beginning and end, with Ts in the middle (for example, GTTTTTTTTTTTTTTTTTA). This sequence arranges itself into a round shape, allowing for the encapsulation of Bromelain. 
+							-linkers are unable to form bridges between Thymine and other nucleobases since Thymine lacks primary amines. This design also creates vacuoles on the surfaces structure, which allows substrates to pass through and interact with the encapsulated Bromelain. After interaction, substrates leave the DNA nanoparticles without damaging the enzyme themselves, thus prolong the life-span of enzymes. </p>			
+							</div>
+							</div>
+							
+							<div class="row table">
+							
+							<table border="2" class="col-12 col-md-6">
+							
+							<tr  style="font-size:1.2em;text-align:center;" bgcolor="lightblue">
+							<td><b>Shell</b></td>
+							<td><b>DNA hydrogel / ATTTTTTTTTTTTTTTTTA</b></td>
+							</tr>
+							
+							<tr>
+							<td style="text-align:center;"><b>Enzyme</b></td>
+							<td>Bromelain</td>
+							</tr>
+							
+							<tr>
+							<td style="text-align:center;"><b>Cross-linker</b></td>
+							<td>Genipin</td>
+							</tr>
+							
+							
+				
+							<tr>
+							<td style="text-align:center;"><b>Reaction</b></td>
+							<td>Protein</td>
+							</tr>
+							
+							<tr>
+							<td style="text-align:center;"><b>Site</b></td>
+							<td>Everywhere</td>
+							</tr>
+							
+							</table>
+							</div>
+							
+							<div id="vaccines" class="row">
+							<div class="col-12">
+							<h4><i>3-3. Vaccines: </i></h4>					
+							</div>
+							</div>
+							
+							
+							<div class="row">
+							<div class="col-12">
+							<h5><i>(1) EspA </i></h5>					
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p>EspA is an immunogen and major virulence factor of enterohaemorrhagic E. coli(EHEC). Being a surface protein, EspA plays a structural role and is a component of a large filamentous organelle that delivers pathogenic factors into human cells, contributing to intestine microvilli attachment/effacement lesion(A/E lesion). Clinically, small doses of EspA  can serve as a vaccine that significantly reduces the total levels of EHEC in in vitro experiments.</p>					
+							</div>
+							</div>
+							
+							
+							<div class="row">
+							<div class="col-12">
+							<h5><i>(2) Oral vaccine </i></h5>					
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p>DNA nanoparticles encapsulating EspA can serve as a perfect oral vaccine.When DNA nanoparticles reach the intestine, deoxyribonuclease1 (DNase1) degrades the DNA, causing the breakdown of the particles and allowing the release of EspA. </p>					
+							</div>
+							</div>
+							
+							<div class="row table">
+							
+							<table border="2" class="col-12 col-md-6">
+							
+							<tr  style="font-size:1.2em;text-align:center;" bgcolor="lightblue">
+							<td><b>Shell</b></td>
+							<td><b>DNA hydrogel / Kiwi genomic DNA</b></td>
+							</tr>
+							
+							<tr>
+							<td style="text-align:center;"><b>Drug</b></td>
+							<td>Doxorubicin</td>
+							</tr>
+							
+							<tr>
+							<td style="text-align:center;"><b>Cross-linker</b></td>
+							<td>DTSSP</td>
+							</tr>
+							
+							
+				
+							<tr>
+							<td style="text-align:center;"><b>Reaction</b></td>
+							<td>GSH</td>
+							</tr>
+							
+							<tr>
+							<td style="text-align:center;"><b>Site</b></td>
+							<td>Cancer cells</td>
+							</tr>
+							
+							</table>
+							</div>
+							
+							<div class="row">
+							<div class="col-12 col-md-6">
+							<img src="img/exp-1.png"/>
+							</div>
+							</div>
+							
+							
+							
+							
+							
+							<div class="col-12">
+								<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+							</div>
+							
+							
+							</section>
+							
+							<section id="reference">
+							
+							<div class="row">
+							<div class="col-12 col-md-6">
+							<img src="img/exp-1.png"/>
+							</div>
+							</div>
+							<div class="row">
+							<div class="col-12">
+								<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+							</div>
+							</div>
+							
+							</section>
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+					
+				</main>
+				</div>
+			</div>
+		</div>	
+		
+		
+		
+		
+				<footer id="footer" >
+				<div>
+					<p>© 2019 by NCKU-BIOMOD. Animation credits to Rachel Smith and Lucas Bedder.</p>
+				</div>
+			
+				</footer>
+				</div>
+		
+		</div>
+		</div>
+		
+		<script>
+		var loader = document.getElementById("loader");
+		window.addEventListener("load",function(){
+		loader.style.height="100%";
+		loader.style.width="100%";
+		loader.style.visibility="hidden";
+		});	
+		</script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/solid.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/regular.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/fontawesome.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		
+		<script>
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+		  dropdown[i].addEventListener("click", function() {
+		  this.classList.toggle("active");
+		  var dropdownContent = this.nextElementSibling;
+		  if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+		  } else {
+		  dropdownContent.style.display = "block";
+		  }
+		  });
+		}
+		</script>
+		
+	</body>
+</html>

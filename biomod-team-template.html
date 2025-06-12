@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		nckuonawebsite
+		</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Hanalei&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+		<link rel="Shortcut Icon" type="image/x-icon" href="img/bluesub.ico" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+		<style type="text/css">
+		
+		body{
+		background:url(img/bg.jpg) ;
+		background-size:cover;
+		background-attachment:fixed;
+		}
+		@media all and (-ms-high-contrast:none){
+		body{
+		background:url(img/bg-1.png);		
+		background-size:cover;
+		background-attachment:fixed;		
+		}
+		}
+		.container{
+		margin-top:0px;
+		padding:0px;
+		background:white;
+		width:100%;
+		background:transparent;
+		
+		}
+		
+		.contents{
+		background:white;
+		margin-bottom:5em;
+		padding-bottom:2em;}
+		
+		#header{
+		height:30%;
+		
+		}
+		
+		#contents{
+		padding-right:0.8em;
+		padding-left:0.8em;
+		padding-top:0;
+		margin-top:0em;}
+		
+		#footer{
+		color:white;
+		font-family: 'Exo 2', sans-serif;
+		text-align:center;
+		}
+
+		#header{
+		font-family: 'Exo 2', sans-serif;
+		text-align:left;
+		padding:0;
+		}
+		
+		h2{
+		font-family: 'Abril Fatface', cursive;}
+		
+		img{		
+		width:100%;
+		padding:1em;
+		margin:0.8px;
+		text-align:center;
+		}
+		
+		#logo{		
+		width:100%;
+		padding:1em;
+		margin:0.8px;
+		text-align:center;
+		margin-right:0.4em;
+		}
+		
+		.row h2{
+		margin-bottom:0.2em;
+		margin-top:1.8em;}
+		
+		h2{
+		font-family: 'Abril Fatface', cursive;}
+		
+		
+		
+		
+		
+		#name-of-project{font-family: 'Luckiest Guy', cursive;
+		font-size:5em; text-align:center;
+		}
+
+		.glow {
+		  font-size: 80px;
+		  font-weight:bold;
+		  color: #DDDDDD;
+		  text-align: center;
+		  -webkit-animation: glow 1s ease-in-out infinite alternate;
+		  -moz-animation: glow 1s ease-in-out infinite alternate;
+		  animation: glow 1s ease-in-out infinite alternate;
+		}
+
+		@-webkit-keyframes glow {
+		  from {
+			text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff,0 0 5px #fff;
+		  }
+		  
+		  to {
+			text-shadow: 0 0 6px #fff, 0 0 7px #00BBFF, 0 0 8px #00BBFF ,0 0 9px #00BBFF,0 0 10px #00BBFF;
+		  }
+		}
+
+		.navbar-brand{
+		font-family: 'Montserrat', sans-serif;
+		color:white;
+		font-weight:bold;
+		font-size:2.5em;}
+		
+		.nav-link{
+		font-family: 'Montserrat', sans-serif;
+		font-weight:light;
+		font-size:1.6em;}
+		
+		#main{
+		margin:0.5em;
+		margin-left:5.2em;}
+		
+		/*以下每個網頁都要*/
+		
+		@media only screen and (min-width:990px){
+		#name-of-project{font-family: 'Montserrat', sans-serif;
+		font-size:5em; text-align:center;
+		}
+		}
+		
+		@media only screen and (max-width:990px){
+		#name-of-project{font-family: 'Montserrat', sans-serif;
+		font-size:3.2em; text-align:center;
+		}
+		}
+		
+		/*以下每個網頁都要*/
+		@media only screen and (max-width:990px){
+		.navbar-brand{
+		font-family: 'Montserrat', sans-serif;
+		color:white;
+		font-weight:bold;
+		font-size:2.5em;}
+		}
+		
+		@media only screen and (max-width:990px){
+		.nav-link{
+		font-family: 'Montserrat', sans-serif;
+		font-weight:light;
+		font-size:1.6em;}
+		}
+		
+			@media only screen and (min-width:990px){
+		#team-intro{		
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:4.0em;
+		margin:0.8em;}
+		}
+		
+		@media only screen and (max-width:990px) and (min-width:400px){
+		#team-intro{
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:2.5em;
+		margin:0.8em;}
+		}
+		
+		@media only screen and (max-width:400px){
+		#team-intro{
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:1.8em;
+		margin:0.8em;}
+		}
+		
+		.facts{
+		margin-top:1em;}
+		section{
+		margin-top:1.5em;}
+		
+		
+		@media only screen and (min-width:990px){
+		#info{
+		font-size:1em;
+		padding-left:30px;
+		color:white;
+		margin-top:1.0em;}
+		}
+		
+		@media only screen and (max-width:990px){
+		#info{
+		font-size:0.75em;
+		
+		padding-left:30px;
+		color:white;
+		margin-top:1.0em;}
+		}
+		
+		.col-12 h2{
+		text-align:center;}
+		
+		#info a{
+		color:#DDDDDD;}
+		.navbar{
+		overflow-y:visible;}
+		
+		
+		
+		#loader{
+		position:fixed;
+		z-index:9999;
+		width:100%;
+		height:100%;		
+		background:rgba(0,0,0,0.6);		
+		top:50%;
+		left:50%;		
+		transform:translate(-50%,-50%);
+		transition: 1.3s;
+		}
+		
+		#loader img{
+		position:absolute;
+		width:100px;
+		height:100px;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		}
+		
+		.dropdown-item:hover{
+		background:#00BBFF;
+		color:white;
+		font-weight:bold;
+		}
+		
+		@media only screen and (min-width:1250px){
+		#navbarNavAltMarkup{
+		font-size:1.0em;}
+		}
+		
+		@media only screen and (min-width:768px) and (max-width:1249px) {
+		#navbarNavAltMarkup{
+		font-size:0.80em;}
+		}
+		</style>
+		
+		
+		
+	</head>
+	<body id="home" style=cursor:url(img/whitesub.cur),auto;>
+	<div id="loader">
+	<img src="img/subgif.gif"/>
+	</div>
+	<div class="container-fluid">
+	<div class="row">
+	
+	
+	<div class="col-12 ">
+	
+	
+	
+	
+	<div  class="container"  >
+	
+		<header id="header">
+		
+		<div class="header" >
+		
+				<div class="row d-flex  align-items-center" >
+					
+					<div class="col-12 col-md-4"><a href="./index.html"><img src="img/sign-high.png" id="logo"   class="img-fluid" width="400px"></a></div> <!--team logo於header左邊-->
+					<p id="name-of-project" class="col-12 col-md-4 glow">NCKU ONA</p>
+					
+					<dl id="info" class="col-12 col-md-4">
+					
+						<dt><i class="far fa-envelope fa-2x"></i></dt><dd><a href="mailto:weichenlin28571653@gmail.com">biomodnckuona@gmail.com</a></dd>
+						<dt><i class="fas fa-home fa-2x"></i></dt><dd>No.1, University Road, East District, Tainan, Taiwan 701 </dd>
+					
+					</dl>
+					
+					
+				</div>
+		</div>
+			
+		</header>
+		
+		<div class="contents" style="cursor:default;">
+		
+		
+		<nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+			  <a class="navbar-brand" href="#home">BIOMOD</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="./index.html">Home</a>
+					<a class="nav-item nav-link " href="./biomod-video-template.html">Video</a>
+					<a class="nav-item nav-link " href="./biomod-overview-template.html">Overview</a>
+					<li class="nav-item dropdown" id="overview-laptop">
+					<a class=" nav-link dropdown-toggle" href= id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Lab
+					</a>				
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <a class="dropdown-item" href="./biomod-exp-operation-template.html">Lab-Operation</a>
+					  <a class="dropdown-item" href="./biomod-exp-result-template.html">Lab-Results</a>
+					</div>
+					</li>
+					<a class="nav-item nav-link" href="./biomod-future-template.html">Future</a>
+					<a class="nav-item nav-link active" href="./biomod-team-template.html">Members</a>
+					<a class="nav-item nav-link" href="./biomod-sponsors-template.html" >Sponsors</a>
+					
+				</div>
+			  </div>
+		</nav>
+	
+		
+
+	
+		
+		
+		
+		
+		
+					
+		
+		<div id="contents" >
+		
+		<div id="team-intro" class="row">
+			<div class="col-12">Group-Members</div>
+		</div>
+		
+		<div class="row">
+		<div class="col-3">
+		<div>
+		
+		
+		</div>
+		</div>
+		
+		<div class="col-6">
+			<main>
+				<section id="teachers">
+				<div class="row">
+				
+				<h2>Teachers</h2>
+				</div>
+					
+					<section id="first-teacher" class="row flex-sm-row-reverse justify-content-center align-items-center">
+					
+						<div class="col-12 col-lg-6">
+							<img src="img/chang.jpg" class="photos img-responsive">
+						</div>
+						<div class="col-12 col-sm-6 col-md-6">
+							<dl class="facts"> 
+							<dt>Nickname:</dt>
+							<dd>林韋辰</dd>
+							<dt>Career:</dt>
+							<dd>林韋辰</dd>
+							<dt>Hobbies:</dt>
+							<dd>林韋辰</dd>
+							<dt>Super-Powers:</dt>
+							<dd>林韋辰</dd>
+																		
+							</dl>
+						<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+						</div>
+					
+					</section>
+					
+					
+					<section  id="second-teacher "class="row flex-sm-row-reverse justify-content-center align-items-center">
+					
+						<div class="col-12 col-lg-6">
+							<img src="img/光頭.jpg" class="photos img-responsive">
+						</div>
+						<div class="col-12 col-sm-6 col-md-6">
+							<dl class="facts"> 
+							<dt>Nickname:</dt>
+							<dd>林韋辰</dd>
+							<dt>Career:</dt>
+							<dd>林韋辰</dd>
+							<dt>Hobbies:</dt>
+							<dd>林韋辰</dd>
+							<dt>Super-Powers:</dt>
+							<dd>林韋辰</dd>
+																		
+							</dl>
+						<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+						</div>
+					
+					</section>
+					
+					
+					
+					
+					
+				</section>
+				
+				<section id="students">
+					<div class="row">
+				
+				<h2>Students</h2>
+				</div>
+					<section  id="first-student "class="row flex-sm-row-reverse justify-content-center align-items-center">
+					
+						<div class="col-12 col-lg-6">
+							<img src="img/1-bg.jpg" class="photos img-responsive">
+						</div>
+						<div class="col-12 col-sm-6 col-md-6">
+							<dl class="facts"> 
+							<dt>Nickname:</dt>
+							<dd>林韋辰</dd>
+							<dt>Career:</dt>
+							<dd>林韋辰</dd>
+							<dt>Hobbies:</dt>
+							<dd>林韋辰</dd>
+							<dt>Super-Powers:</dt>
+							<dd>林韋辰</dd>
+																		
+							</dl>
+						<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+						</div>
+					
+					</section>
+					
+					<section  id="second-student "class="row flex-sm-row-reverse justify-content-center align-items-center">
+					
+						<div class="col-12 col-lg-6">
+							<img src="img/1-bg.jpg" class="photos img-responsive">
+						</div>
+						<div class="col-12 col-sm-6 col-md-6">
+							<dl class="facts"> 
+							<dt>Nickname:</dt>
+							<dd>林韋辰</dd>
+							<dt>Career:</dt>
+							<dd>林韋辰</dd>
+							<dt>Hobbies:</dt>
+							<dd>林韋辰</dd>
+							<dt>Super-Powers:</dt>
+							<dd>林韋辰</dd>
+																		
+							</dl>
+						<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+						</div>
+					
+					</section>
+					
+					<section  id="third-student "class="row flex-sm-row-reverse justify-content-center align-items-center">
+					
+						<div class="col-12 col-lg-6">
+							<img src="img/1-bg.jpg" class="photos img-responsive">
+						</div>
+						<div class="col-12 col-sm-6 col-md-6">
+							<dl class="facts"> 
+							<dt>Nickname:</dt>
+							<dd>林韋辰</dd>
+							<dt>Career:</dt>
+							<dd>林韋辰</dd>
+							<dt>Hobbies:</dt>
+							<dd>林韋辰</dd>
+							<dt>Super-Powers:</dt>
+							<dd>林韋辰</dd>
+																		
+							</dl>
+						<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+						</div>
+					
+					</section>
+					
+					<section  id="forth-student " class="row flex-sm-row-reverse justify-content-center align-items-center">
+					
+						<div class="col-12 col-lg-6">
+							<img src="img/1-bg.jpg" class="photos img-responsive">
+						</div>
+						<div class="col-12 col-sm-6 col-md-6">
+							<dl class="facts"> 
+							<dt>Nickname:</dt>
+							<dd>林韋辰</dd>
+							<dt>Career:</dt>
+							<dd>林韋辰</dd>
+							<dt>Hobbies:</dt>
+							<dd>林韋辰</dd>
+							<dt>Super-Powers:</dt>
+							<dd>林韋辰</dd>
+																		
+							</dl>
+						<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+						</div>
+					
+					</section>
+					
+					<section  id="fifth-student "class="row flex-sm-row-reverse justify-content-center align-items-center">
+					
+						<div class="col-12 col-lg-6">
+							<img src="img/1-bg.jpg" class="photos img-responsive">
+						</div>
+						<div class="col-12 col-sm-6 col-md-6">
+							<dl class="facts"> 
+							<dt>Nickname:</dt>
+							<dd>林韋辰</dd>
+							<dt>Career:</dt>
+							<dd>林韋辰</dd>
+							<dt>Hobbies:</dt>
+							<dd>林韋辰</dd>
+							<dt>Super-Powers:</dt>
+							<dd>林韋辰</dd>
+																		
+							</dl>
+						<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+						</div>
+					
+					</section>
+					
+					<section  id="sixth-student "class="row flex-sm-row-reverse justify-content-center align-items-center">
+					
+						<div class="col-12 col-lg-6">
+							<img src="img/1-bg.jpg" class="photos img-responsive">
+						</div>
+						<div class="col-12 col-sm-6 col-md-6">
+							<dl class="facts"> 
+							<dt>Nickname:</dt>
+							<dd>林韋辰</dd>
+							<dt>Career:</dt>
+							<dd>林韋辰</dd>
+							<dt>Hobbies:</dt>
+							<dd>林韋辰</dd>
+							<dt>Super-Powers:</dt>
+							<dd>林韋辰</dd>
+																		
+							</dl>
+						<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+						</div>
+					
+					</section>
+					
+					<section id="seventh-student "class="row flex-sm-row-reverse justify-content-center align-items-center">
+					
+						<div class="col-12 col-lg-6">
+							<img src="img/1-bg.jpg" class="photos img-responsive">
+						</div>
+						<div class="col-12 col-sm-6 col-md-6">
+							<dl class="facts"> 
+							<dt>Nickname:</dt>
+							<dd>林韋辰</dd>
+							<dt>Career:</dt>
+							<dd>林韋辰</dd>
+							<dt>Hobbies:</dt>
+							<dd>林韋辰</dd>
+							<dt>Super-Powers:</dt>
+							<dd>林韋辰</dd>
+																		
+							</dl>
+						<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+						</div>
+					
+					</section>
+					
+					
+					
+					
+				</section>
+					
+			
+		</div>
+		<div class="col-3">
+		
+		<div class="space">
+		<p><p>
+		</div>
+		
+		
+		</div>
+		</div>
+		</div>
+		</div>
+				<footer id="footer" >
+			<div>
+				<p>© 2019 by NCKU-BIOMOD. Animation credits to Rachel Smith and Lucas Bedder.</p>
+			</div>
+			
+		</footer>
+		
+		
+		</div>
+		</div>
+		</div>
+		</div>
+		<script>
+		var loader = document.getElementById("loader");
+		window.addEventListener("load",function(){
+		loader.style.height="100%";
+		loader.style.width="100%";
+		loader.style.visibility="hidden";
+		});	
+		</script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/solid.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/regular.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/fontawesome.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		
+		<script>
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+		  dropdown[i].addEventListener("click", function() {
+		  this.classList.toggle("active");
+		  var dropdownContent = this.nextElementSibling;
+		  if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+		  } else {
+		  dropdownContent.style.display = "block";
+		  }
+		  });
+		}
+		</script>
+		
+	</body>
+</html>

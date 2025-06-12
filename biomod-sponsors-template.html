@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		nckuonawebsite
+		</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Hanalei&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+		<link rel="Shortcut Icon" type="image/x-icon" href="img/bluesub.ico" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+		<style type="text/css">
+		
+		body{
+		background:url(img/bg.jpg)  ;
+		
+		background-size:cover;
+		background-attachment:fixed;
+		
+		}
+		@media all and (-ms-high-contrast:none){
+		body{
+		background:url(img/bg-1.png);		
+		background-size:cover;
+		background-attachment:fixed;		
+		}
+		}
+		.container{
+		margin-top:0px;
+		padding:0px;
+		background:white;
+		width:100%;
+		background:transparent;
+		
+		}
+		
+		.contents{
+		background:white;
+		margin-bottom:5em;
+		padding-bottom:2em;}
+		
+		#contents{
+		padding-right:0.8em;
+		padding-left:0.8em;
+		padding-top:0;
+		margin-top:0em;
+		text-align:center;}
+		
+		#header{
+		height:20%;}
+		
+		#footer{
+		color:white;
+		font-family: 'Exo 2', sans-serif;
+		text-align:center;
+		}
+
+		#header{
+		font-family: 'Exo 2', sans-serif;
+		text-align:left;
+		}
+		
+		h1{
+		font-family: 'Abril Fatface', cursive;}
+		
+		
+		#submarine-head{		
+		padding:0px;
+		margin:0;}
+		
+		#submarine-bottom{
+		padding:0px;
+		margin:0;}
+		
+		.navbar navbar-expand-lg navbar-light bg-light{
+		margin:0;}
+		
+		
+		
+		#logo{		
+		width:100%;
+		padding:1em;
+		margin:0.8px;
+		text-align:center;
+		margin-right:0.4em;
+		}
+		
+		
+		
+		
+		#name-of-project{font-family: 'Luckiest Guy', cursive;
+		font-size:5em; text-align:center;
+		}
+
+		.glow {
+		  font-size: 80px;
+		  font-weight:bold;
+		  color: #DDDDDD;
+		  text-align: center;
+		  -webkit-animation: glow 1s ease-in-out infinite alternate;
+		  -moz-animation: glow 1s ease-in-out infinite alternate;
+		  animation: glow 1s ease-in-out infinite alternate;
+		}
+
+		@-webkit-keyframes glow {
+		  from {
+			text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff,0 0 5px #fff;
+		  }
+		  
+		  to {
+			text-shadow: 0 0 6px #fff, 0 0 7px #00BBFF, 0 0 8px #00BBFF ,0 0 9px #00BBFF,0 0 10px #00BBFF;
+		  }
+		}
+
+		.navbar-brand{
+		font-family: 'Montserrat', sans-serif;
+		color:white;
+		font-weight:bold;
+		font-size:2.5em;}
+		
+		.nav-link{
+		font-family: 'Montserrat', sans-serif;
+		font-weight:light;
+		font-size:1.6em;}
+		
+		#main{
+		margin:0.5em;
+		margin-left:5.2em;}
+		
+		/*以下每個網頁都要*/
+		
+		@media only screen and (min-width:990px){
+		#name-of-project{font-family: 'Montserrat', sans-serif;
+		font-size:5em; text-align:center;
+		}
+		}
+		
+		@media only screen and (max-width:990px){
+		#name-of-project{font-family: 'Montserrat', sans-serif;
+		font-size:3.2em; text-align:center;
+		}
+		}
+		
+		/*以下每個網頁都要*/
+		@media only screen and (max-width:990px){
+		.navbar-brand{
+		font-family: 'Montserrat', sans-serif;
+		color:white;
+		font-weight:bold;
+		font-size:2.5em;}
+		}
+		
+		@media only screen and (max-width:990px){
+		.nav-link{
+		font-family: 'Montserrat', sans-serif;
+		font-weight:light;
+		font-size:1.6em;}
+		}
+		
+			@media only screen and (min-width:990px){
+		#sponsors-intro{		
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:4.0em;
+		margin:0.8em;}
+		}
+		
+		@media only screen and (max-width:990px) and (min-width:400px){
+		#sponsors-intro{
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:2.5em;
+		margin:0.8em;}
+		}
+		
+		@media only screen and (max-width:400px){
+		#sponsors-intro{
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:1.8em;
+		margin:0.8em;}
+		}
+		
+		.facts{
+		margin-top:1em;}
+		section{
+		margin-top:1.5em;}
+		
+		
+		@media only screen and (min-width:990px){
+		#info{
+		font-size:1em;
+		padding-left:30px;
+		color:white;
+		margin-top:1.0em;}
+		}
+		
+		@media only screen and (max-width:990px){
+		#info{
+		font-size:0.75em;
+		
+		padding-left:30px;
+		color:white;
+		margin-top:1.0em;}
+		}
+		
+		.col-12 h1{
+		text-align:center;}
+		
+		#info a{
+		color:#DDDDDD;}
+		.navbar{
+		overflow-y:visible;}
+		
+		
+		
+		#loader{
+		position:fixed;
+		z-index:9999;
+		width:100%;
+		height:100%;		
+		background:rgba(0,0,0,0.6);		
+		top:50%;
+		left:50%;		
+		transform:translate(-50%,-50%);
+		transition: 1.3s;
+		}
+		
+		#loader img{
+		position:absolute;
+		width:70px;
+		height:70px;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		}
+		
+		#contents img{
+		width:100%;
+		
+		left:50%;
+		padding:4em;		
+		margin-bottom:1.5em;
+		}
+		
+		
+		
+		@media only screen and (min-width:1250px){
+		#navbarNavAltMarkup{
+		font-size:1.0em;}
+		}
+		
+		@media only screen and (min-width:768px) and (max-width:1249px) {
+		#navbarNavAltMarkup{
+		font-size:0.80em;}
+		}
+		
+		
+		
+		.dropdown-item:hover{
+		background:#00BBFF;
+		color:white;
+		font-weight:bold;
+		}
+		
+		.card{
+		border:transparent;
+		}
+		
+		.card .face1{		
+		transform:translateY(100px);}
+		
+		.card:hover .face1{
+		position:relative;
+		border:transparent;
+		transform:translateY(0px);
+		}	
+		
+		
+		.card .face2{		
+		transform:translateY(-100px);
+		background:white;}
+		
+		
+		.card:hover .face2{
+		position:relative;
+		border:transparent;
+		transform:translateY(0px);
+		background:#333;
+		}	
+		
+		.face{
+		background:white;
+		position:relative;
+		text-align:left;		
+		transition:0.5s;}
+		
+		.face1{		
+		position:relative;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		z-index:1;
+		
+		}
+		
+		.face2{
+		position:relative;
+		background:#333;
+		display:flex;
+		justify-content:center;
+		padding:15px;
+		box-sizing:border-box;
+		box-shadow:0 20ppx 50px rgba(0,0,0,0.8);
+		transform:translateY(-100px);
+		}
+		
+		.content p{
+		margin:0;
+		padding:0;
+		text-align:center;
+		
+		}
+		
+		.face2 a{
+		margin:15px 0 0;
+		display:inline-block;
+		text-decoration:none;
+		font-weight:800;
+		color:white;
+		padding:5px;
+		border:1px solid #fff;
+		
+		}
+		
+		.card{
+		margin:0;}
+		
+		.face2 a:hover{
+		background:white;
+		color:#000;
+		}
+		
+		
+		.face2 p{
+		color:white;}
+		
+		@media only screen and (min-width:768px){
+		#forth-photo{
+		padding-top:5em;}
+		}
+		
+		.face1{
+		opacity:0.65;
+		
+		}
+		.face1:hover{
+		opacity:1;}
+		
+		#contents-for-IE{
+		display:none;}
+		
+		@media all and (-ms-high-contrast:none){
+		.card img{padding:0;
+		background:white;}
+		}
+		@media all and (-ms-high-contrast:none){
+		h1{padding:0;
+		background:white;}
+		}
+		
+		
+		
+		
+		
+		@media all and (-ms-high-contrast:none){
+		.face1{
+		height:600px;}
+		}
+		
+		</style>
+		
+		
+		
+	</head>
+	<body id="home" style=cursor:url(img/whitesub.cur),auto;>
+	<div id="loader">
+	<img src="img/subgif.gif"/>
+	</div>
+	<div class="container-fluid">
+	<div class="row">
+	
+	
+	<div class="col-12 ">
+	
+	
+	
+	
+	<div  class="container"  >
+	
+		<header id="header">
+		
+		<div class="header" >
+		
+				<div class="row d-flex  align-items-center" >
+					
+					<div class="col-12 col-md-4"><a href="./index.html"><img src="img/sign-high.png" id="logo"   class="img-fluid" width="400px"></a></div> <!--team logo於header左邊-->
+					<p id="name-of-project" class="col-12 col-md-4 glow">NCKU ONA</p>
+					
+					<dl id="info" class="col-12 col-md-4">
+					
+						<dt><i class="far fa-envelope fa-2x"></i></dt><dd><a href="mailto:weichenlin28571653@gmail.com">biomodnckuona@gmail.com</a></dd>
+						<dt><i class="fas fa-home fa-2x"></i></dt><dd>No.1, University Road, East District, Tainan, Taiwan 701 </dd>
+					
+					</dl>
+					
+					
+				</div>
+		</div>
+			
+		</header>
+		
+		<div class="contents" style="cursor:default;">
+		
+		
+		<nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+			  <a class="navbar-brand" href="#home">BIOMOD</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="./index.html">Home</a>
+					<a class="nav-item nav-link " href="./biomod-video-template.html">Video</a>
+					<a class="nav-item nav-link " href="./biomod-overview-template.html">Overview</a>
+					<li class="nav-item dropdown" id="overview-laptop">
+					<a class=" nav-link  dropdown-toggle" href= id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Lab
+					</a>				
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <a class="dropdown-item" href="./biomod-exp-operation-template.html">Lab-Operation</a>
+					  <a class="dropdown-item" href="./biomod-exp-result-template.html">Lab-Results</a>
+					</div>
+					</li>
+					<a class="nav-item nav-link" href="./biomod-future-template.html">Future</a>
+					<a class="nav-item nav-link" href="./biomod-team-template.html">Members</a>
+					<a class="nav-item nav-link active" href="./biomod-sponsors-template.html" >Sponsors</a>
+					
+				</div>
+			  </div>
+		</nav>
+	
+		
+				
+		
+		
+		
+		
+					
+		
+		<div id="contents" >
+			<div id="sponsors-intro" class="row">
+			<div class="col-12">Sponsors</div>
+			</div>
+				
+				<div class="row">
+					
+					<div class="col-12">
+					<h1>Thanks For All Supporting</h1>
+					
+					</div>
+				</div>
+				<div class="row">
+					<div id="first-photo" class="col-xs-12 col-md-6">
+						<div class="card">
+							<div class="face face1">
+								<div class="content">
+									<img src="img/EDU.png" class="img-responsive"/>
+								</div>
+							</div>
+							<div class="face face2">
+								<div>
+									<p>Ministry of Education Taiwan, the highest authority in charge of the academic, sports and youth affairs of the Executive Yuan is responsible for supervising the educational administrations of local governments at all levels.</p>
+									<a href="https://english.moe.gov.tw/mp-1.html">Learn More</a>
+								</div>
+							</div>
+						</div>		
+					</div>
+					<div id="second-photo" class="col-xs-12 col-md-6">
+						<div class="card">
+							<div class="face face1">
+								<div class="content">
+									<img src="img/NCKU.png"/>
+								</div>
+							</div>
+							<div class="face face2">
+								<div>
+									<p>NCKU was established in 1931 and located in Tainan City, the ancient capital in Taiwan from 1624 to 1887. NCKU has 9 colleges and offers Bachelor’s, Master’s, and Ph.D. programs. It is a research-oriented comprehensive university with integrated academic fields and earns reputation as an international top-tier university in Taiwan.</p>
+									<a href="https://web.ncku.edu.tw/index.php?Lang=en">Learn More</a>
+								</div>
+							</div>
+						</div>		
+					</div>
+				</div>
+				
+				<div class="row">
+					<div id="third-photo" class="col-xs-12 col-md-6">
+						<div class="card">
+							<div class="face face1">
+								<div class="content">
+									<img src="img/MED.png"/>
+								</div>
+							</div>
+							<div class="face face2">
+								<div>
+									<p>NCKUH, national Cheng Kung university hospital, is established in 1988. The mission of NCKUH is to protect the health of the people of southern Taiwan, heading to be the international clinical research and medical education main association.</p>
+									<a href="http://web.med.ncku.edu.tw/app/index.php?Lang=en">Learn More</a>
+								</div>
+							</div>
+						</div>		
+					</div>
+					<div id="forth-photo" class="col-xs-12 col-md-6">
+						<div class="card">
+							<div class="face face1">
+								<div class="content">
+									<img src="img/ZEJU.jpg"/>
+								</div>
+							</div>
+							<div class="face face2">
+								<div>
+									<p>Founded in 2008, the company started with laboratory basic experimental consumables and biotechnology industries. ZEJU goes deep into major schools, hospitals, government agencies. In 2014, under the efforts of the team, ZEJU had successfully transformed into the world's most advanced molecular biotechnology, the most professional information and technology platform.</p>
+									<a href="http://www.zeju-bio.com/">Learn More</a>
+								</div>
+							</div>
+						</div>		
+					</div>
+					
+						</div>		
+					</div>
+					
+			
+				</div>
+				
+			
+		
+				<footer id="footer" >
+			<div>
+				<p>© 2019 by NCKU-BIOMOD. Animation credits to Rachel Smith and Lucas Bedder.</p>
+			</div>
+			
+		</footer>
+		
+		</div>
+		</div>
+		
+		</div>
+		</div>
+		
+		<script>
+		var loader = document.getElementById("loader");
+		window.addEventListener("load",function(){
+		loader.style.height="100%";
+		loader.style.width="100%";
+		loader.style.visibility="hidden";
+		});	
+		</script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/solid.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/regular.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/fontawesome.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		
+		<script>
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+		  dropdown[i].addEventListener("click", function() {
+		  this.classList.toggle("active");
+		  var dropdownContent = this.nextElementSibling;
+		  if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+		  } else {
+		  dropdownContent.style.display = "block";
+		  }
+		  });
+		}
+		</script>
+		
+	</body>
+</html>

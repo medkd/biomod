@@ -1,0 +1,1260 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		nckuonawebsite
+		</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Hanalei&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+		<link rel="Shortcut Icon" type="image/x-icon" href="img/bluesub.ico" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+		<style type="text/css">
+		
+		body{
+		background:url(img/bg.jpg) ;
+		background-size:cover;
+		background-attachment:fixed;
+		
+		}
+		
+		@media all and (-ms-high-contrast:none){
+		body{
+		background:url(img/bg-1.png);		
+		background-size:cover;
+		background-attachment:fixed;		
+		}
+		}
+		.container{
+		margin-top:0px;
+		padding:0px;
+		background:white;
+		width:100%;
+		background:transparent;
+		
+		}
+		
+		.contents{
+		background:white;
+		margin-bottom:5em;
+		padding-bottom:2em;}
+		
+		#contents{
+		padding-right:0.8em;
+		padding-left:0.8em;
+		padding-top:0;
+		margin-top:0em;}
+		
+		#header{
+		height:20%;}
+		
+		#footer{
+		color:white;
+		font-family: 'Exo 2', sans-serif;
+		text-align:center;
+		}
+
+		#header{
+		font-family: 'Exo 2', sans-serif;
+		text-align:left;
+		}
+		
+		
+				
+		#submarine-head{		
+		padding:0px;
+		margin:0;}
+		
+		#submarine-bottom{
+		padding:0px;
+		margin:0;}
+		
+		.navbar navbar-expand-lg navbar-light bg-light{
+		margin:0;}
+		
+		img{		
+		width:100%;
+		padding:1em;
+		margin:0.8px;
+		text-align:center;
+		}
+		
+		#logo{		
+		width:100%;
+		padding:1em;
+		margin:0.8px;
+		text-align:center;
+		margin-right:0.4em;
+		}
+		
+		/* Style the sidenav links and the dropdown button */
+		.sidenav a {
+		  padding: 4px 8px 6px 1px;
+		  text-decoration: none;
+		  font-size: 1.3em;
+		  font-family: 'Oswald', sans-serif;
+		  
+		  color: #FFFFFF;
+		  display: block;
+		  border: none;
+		  background: none;
+		  width: 100%;
+		  text-align: left;
+		  cursor: pointer;
+		  outline: none;
+		  text-align:left;
+		}
+		
+		.dropdown-btn {
+		  padding: 5px 8px 6px 9px;
+		  text-decoration: none;
+		  font-size: 1.3em;
+		  color: #FFFFFF;
+		  display: block;
+		  border: none;
+		  background: none;
+		  width: 100%;
+		  text-align: left;
+		  cursor: pointer;
+		  outline: none;
+		  text-align:left;
+		  font-family: 'Oswald', sans-serif;
+		}
+		
+		.sidenav-head{
+		margin-top:100px;
+		height:23%;}
+		
+		/* On mouse-over */
+		.sidenav a:hover, .dropdown-btn:hover {
+		  color: #FFFFFF;
+		  font-weight:bold;
+		}
+
+		/* Main content */
+		.main {
+		  margin-left: 200px; /* Same as the width of the sidenav */
+		  font-size: 20px; /* Increased text to enable scrolling */
+		  padding: 0px 10px;
+		}
+		
+		
+		/* Add an active class to the active dropdown button */
+		.active {
+		  background-color:;
+		  color: white;
+		}
+
+		/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+		
+		
+		/* Optional: Style the caret down icon */
+		.fa-caret-down {
+		  float: right;
+		  padding-right: 5px;
+		  padding-top:0px;
+		  margin-top:0px;
+		}
+		
+		
+		
+		.button{background: transparent;
+			margin:0px;
+			margin-left:0;
+			width:100%;
+			height:7%;
+			text-align:left;
+			text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.9);
+			border-right:2px white solid;
+			border-left:2px white solid;
+			
+			border-top:1px white solid;
+			border-bottom:2px white solid;
+			
+			
+			transition: 0.5s;
+			position: relative;
+			overflow: hidden;
+		}
+		
+		
+		
+		.button:hover {
+			
+			text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.9);
+			background:rgba(255,255,255,0.5);
+			
+		}
+
+		.button::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to right, transparent, white, transparent);
+			left: -100%;
+			transition: 0.5s;
+		}
+		
+		
+		
+		
+		
+		.glow {
+		  font-size: 80px;
+		  font-weight:bold;
+		  color: #DDDDDD;
+		  text-align: center;
+		  -webkit-animation: glow 1s ease-in-out infinite alternate;
+		  -moz-animation: glow 1s ease-in-out infinite alternate;
+		  animation: glow 1s ease-in-out infinite alternate;
+		}
+
+		@-webkit-keyframes glow {
+		  from {
+			text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff,0 0 5px #fff;
+		  }
+		  
+		  to {
+			text-shadow: 0 0 6px #fff, 0 0 7px #00BBFF, 0 0 8px #00BBFF ,0 0 9px #00BBFF,0 0 10px #00BBFF;
+		  }
+		}
+
+		
+		
+		.row{
+		padding-right:0.8em;
+		padding-left:0.8em;
+		}
+		
+		.legend{
+		margin:0.25em;
+		padding:0.25em;}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/* Some media queries for responsiveness */
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;
+		  }
+		  .sidenav a {font-size: 18px;}
+		 }
+		 
+		
+		
+		@media only screen and (max-width:768px){
+		.sidenav{
+		  display:block;
+		  height: 100%;
+		  width:16.7%;
+		  position: absolute;
+		  z-index: 1;
+		  top: 0%;
+		  left: 0;
+		  overflow-x:hidden;		  
+		  background:linear-gradient(to right,rgba(68,68,68),rgba(136,136,136));}
+		}
+		
+		@media only screen and (min-width:768px){
+		.sidenav {
+		  height: 100%;
+		  width:16.7%;
+		  position: fixed;
+		  z-index: 1;
+		  top: 0%;
+		  left: 0;		  
+		  overflow-x:hidden;		  
+		  background:transparent;
+		}
+		}
+		
+		@media only screen and (min-width:990px){
+		#name-of-project{font-family: 'Montserrat', sans-serif;
+		font-size:5em; text-align:center;
+		}
+		}
+		
+		@media only screen and (max-width:990px){
+		#name-of-project{font-family: 'Montserrat', sans-serif;
+		font-size:3.2em; text-align:center;
+		}
+		}
+		
+		@media only screen and (min-width:990px){
+		#info{
+		font-size:1em;
+		padding-left:30px;
+		color:#DDDDDD;
+		margin-top:1.0em;}
+		}
+		
+		@media only screen and (max-width:990px){
+		#info{
+		font-size:0.75em;
+		padding-left:30px;
+		color:#DDDDDD;
+		margin-top:1.0em;}
+		}
+		
+		@media only screen and (min-width:990px){
+		.navbar-brand{
+		font-family: 'Montserrat', sans-serif;
+		color:white;
+		font-weight:bold;
+		font-size:2.5em;}
+		}
+		
+		@media only screen and (min-width:990px){
+		.nav-link{
+		font-family: 'Montserrat', sans-serif;
+		font-weight:light;
+		font-size:1.6em;}
+		}
+		
+		/*以下每個網頁都要*/
+		@media only screen and (max-width:990px){
+		.navbar-brand{
+		font-family: 'Montserrat', sans-serif;
+		color:white;
+		font-weight:bold;
+		font-size:2.5em;}
+		}
+		
+		@media only screen and (max-width:990px){
+		.nav-link{
+		font-family: 'Montserrat', sans-serif;
+		font-weight:light;
+		font-size:1.6em;}
+		}
+		
+			@media only screen and (min-width:990px){
+		#exp-intro{		
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:4.0em;
+		margin:0.8em;}
+		}
+		
+		@media only screen and (max-width:990px) and (min-width:400px){
+		#exp-intro{
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:2.5em;
+		margin:0.8em;}
+		}
+		
+		@media only screen and (max-width:400px){
+		#exp-intro{
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:1.8em;
+		margin:0.8em;}
+		}
+		
+		
+		
+		.navbar{
+		overflow-y:visible;}
+		
+		#info a{
+		color:#DDDDDD;}
+		
+		.subnavdiv{
+		margin-top:0.5em;}
+		
+		
+		#loader{
+		position:fixed;
+		z-index:10000;
+		width:100%;
+		height:100%;		
+		background:rgba(0,0,0,0.6);	
+		top:50%;
+		left:50%;		
+		transform:translate(-50%,-50%);
+		transition: 0s;
+		}
+		
+		#loader img{
+		position:absolute;
+		width:100px;
+		height:100px;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		}
+		
+		.table{
+		
+		padding-left:1em;
+		padding-right:0em;
+		margin-right:0em;}
+		
+		table{
+		border-collapse:collapse;
+		border-spacing:0;
+		table-layout:fixed;
+		
+		}
+		
+		table td{
+		
+		text-overflow:ellipsis;
+		word-wrap:break-word;		
+		}
+		
+		@media only screen and (max-width:1200px) and (min-width:768px){
+		.adjustsize{
+		width:70%;
+		}
+		}
+		
+		@media only screen and (max-width:1200px) and (min-width:768px){
+		.adjustsize{
+		width:85%;
+		}
+		}
+		
+		@media only screen and (max-width:1200px) and (min-width:768px){
+		table{
+		font-size:0.8em;}
+		}
+		
+		@media only screen and (max-width:767px) and (min-width:450px){
+		table{
+		font-size:0.5em;}
+		}
+		
+		@media only screen and (max-width:449px){
+		table{
+		font-size:0.3em;}
+		}
+		
+		@media only screen and (min-width:768px){
+		#overview-RWD{display:none;
+		}}
+		
+		@media only screen and (max-width:768px){
+		#overview-laptop{display:none;
+		}}
+		@media only screen and (min-width:1250px){
+		#navbarNavAltMarkup{
+		font-size:1.0em;}
+		}
+		
+		@media only screen and (min-width:768px) and (max-width:1249px) {
+		#navbarNavAltMarkup{
+		font-size:0.70em;}
+		}
+		
+		
+		
+		.dropdown-item:hover{
+		background:#00BBFF;
+		color:white;
+		font-weight:bold;
+		}
+		
+		section{
+		margin-bottom:50px;}
+		
+		#link1{
+		background-color:green;
+		padding-left:8px;}
+		
+		.dropdown-container {
+		  display: none;
+		  background-color: #262626;
+		  padding-left: 0px;
+		  border:#000 1px solid;
+		}
+		
+		.row{
+		margin-top:1.3em;}
+		
+		@media only screen and (min-width:768px){
+		#other_page{display:none;
+		}}
+		
+		</style>
+		
+		
+		
+	</head>
+	<body id="home" style=cursor:url(img/whitesub.cur),auto;>
+	<div id="loader">
+	<img src="img/subgif.gif"/>
+	</div>
+	<div class="container-fluid">
+	<div class="row">
+	<div class="col-md-2">
+		
+		<div class="sidenav" >
+		  <div class="subnavdiv">
+		  <div class="sidenav-head"><img src="img/subhead.png" class="img-fluid" id="submarine-head" /></div>
+		  <button class="button" ><a href="#introduction" >Introduction</a></button>
+		  <button class="button"><a href="#materials">Materials and methods</a></button>
+		  <button class="button"><a href="#experiment">Experimental results</a></button>
+		  <button class="button"><a href="#discussion">Discussion</a></button>
+		  <button class="button"><a href="#reference">Reference</a></button>
+		  <button class="dropdown-btn button">HI 
+			<i class="fa fa-caret-down fa-2x"></i>
+		  </button>
+		  <div class="dropdown-container">
+			<a  id="link1" href="#">Link 1</a>
+			<a href="#">Link 2</a>
+			<a href="#">Link 3</a>
+		  </div>
+		  <div class="sidenav-bottom"><img src="img/subbuttom.png" class="img-fluid" id="submarine-bottom" /></div>
+		</div>
+		</div>
+		
+	
+	</div>
+	
+	<div class="col-12 col-md-10 ">
+	
+	
+	
+	
+	<div  class="container"  >
+	
+		<header id="header">
+		
+		<div class="header" >
+		
+				<div class="row d-flex  align-items-center" >
+					
+					<div class="col-12 col-md-4"><a href="./index.html"><img src="img/sign-high.png" id="logo"   class="img-fluid" width="400px"></a></div> <!--team logo於header左邊-->
+					<p id="name-of-project" class="col-12 col-md-4 glow">NCKU ONA</p>
+					
+					<dl id="info" class="col-12 col-md-4">
+					
+						<dt><i class="far fa-envelope fa-2x"></i></dt><dd><a href="mailto:weichenlin28571653@gmail.com">biomodnckuona@gmail.com</a></dd>
+						<dt><i class="fas fa-home fa-2x"></i></dt><dd>No.1, University Road, East District, Tainan, Taiwan 701 </dd>
+					
+					</dl>
+					
+					
+				</div>
+		</div>
+			
+		</header>
+		
+		<div class="contents" style="cursor:default;">
+		
+		
+		<nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+			  <a class="navbar-brand" href="#home">BIOMOD</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="./index.html">Home</a>
+					<a class="nav-item nav-link " href="./biomod-video-template.html">Video</a>
+					<a class="nav-item nav-link " href="./biomod-overview-template.html">Overview</a>
+					<li class="nav-item dropdown" id="overview-laptop">
+					<a class=" nav-link active dropdown-toggle" href= id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Lab
+					</a>				
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <a class="dropdown-item" href="./biomod-exp-operation-template.html">Lab-Operation</a>
+					  <a class="dropdown-item" href="./biomod-exp-result-template.html">Lab-Results</a>
+					</div>
+					</li>
+					<a class="nav-item nav-link" id="other_page" href="./biomod-exp-operation-template.html">Lab-Operation</a>
+					<li class="nav-item dropdown" id="overview-RWD">
+					<a class=" nav-link active dropdown-toggle" href= id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Lab-Results
+					</a>				
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <a class="dropdown-item" href="#">Action</a>
+					  <a class="dropdown-item" href="#">Another action</a>
+					  <a class="dropdown-item" href="#">Something else here</a>
+					</div>
+					</li>
+					<a class="nav-item nav-link" href="./biomod-future-template.html">Future</a>
+					<a class="nav-item nav-link" href="./biomod-team-template.html">Members</a>
+					<a class="nav-item nav-link" href="./biomod-sponsors-template.html" >Sponsors</a>
+					
+				</div>
+			  </div>
+		</nav>
+	
+		
+		
+	
+		
+		
+		
+		
+		
+					
+		
+		<div id="contents" >
+				
+					<main id="main">
+							
+							<div class="row">
+							<div class="col-12">
+							<p id="exp-intro">Lab-Results</p>
+							</div>
+							</div>
+							
+							<section id="introduction">
+							<div class="row">
+							<div class="col-12">
+							<h3><b>1. Introduction</b></h3>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">			
+							
+							<p>Biomolecules isolated from nature, such as saccharides, proteins, lipids and nucleic acids, are green biomaterials that are fantastic for biomedical applications since they solve biocompatibility and cytotoxicity issues. One of these biomaterials, deoxyribonucleic acid (DNA), makes up the genetic code of most living systems and determine the amino acid sequence of proteins. These sequences make up the genetic code and are made up of nucleotides, which contain a hydrophilic phosphate group, a sugar group and a hydrophobic nitrogen base. The four types of nitrogen bases are adenine (A), thymine (T), cytosine (C) and guanine (G). Of these, only A, C and G have primary amines (-NH2). Primary amines can be targeted by cross-linking agents to form net structures that facilitate drug encapsulation. For these reasons, primary amines on the A, C and G nitrogen bases were crosslinked using genipin or 3,3'-Dithiobis(sulfosuccinimidylpropionate) (DTSSP) to load drug or therapeutic proteins into DNA nanoparticles for advanced medical application.</p>
+							<p>Typical chemotherapy works mainly by interfering with DNA synthesis and cell mitosis, leading to the death of rapidly growing and dividing cancerous cells. Unfortunately, the most common chemotherapy agents currently used are nonselective and harmful toward normal tissues, causing severe side effects. In fact, the severe adverse effects induced by chemotherapeutic agents on normal tissues and organs are a major cause behind the high mortality rate of carcinoma patients. In addition, since the bio-accessibility of these drugs to tumor tissues is relatively poor, higher doses are required, leading to elevated toxicity in normal cells and an increased incidence of multiple drug resistance. Therefore, it is desirable to develop chemotherapeutics that can either passively or actively target cancer cells,  reducing adverse side effects while improving therapeutic efficacy. Doxorubicin (DOX), a DNA chelating agent, was encapsulated in DTSSP-crosslinked DNA nanoparticles for this reason. DOX uptake of cancer cells and apoptotic death were further analyzed to evaluate DNA nanoparticle feasibility as an anti-cancer drug carrier.</p>
+							<p>The use of needle-free vaccine administration eliminates the risk of transmitting blood-borne pathogens and can be performed by health workers without any medical training. Furthermore, oral vaccination increases patient compliance because the pain and discomfort from a needle injection is avoided. The bacteria Enterohemorrhagic Escherichia coli (EHEC) is a common cause of bloody diarrhea, hemolytic uremic syndrome and is associated with a higher hazard of death in children and the elderly. Vaccine carrying antigens of EHEC administrated in the oral-gut tract are an appealing strategy to deal with EHEC. EspA filament is one of the virulence factors of enterohemorrhagic EHEC and we successfully encapsulated it in genipin-crosslinked DNA nanoparticles. Antibodies of EspA and protection from EHEC infectious deaths were investigated to evaluate the efficacy of using DNA nanoparticles in oral vaccines. </p>
+							
+							</div>
+							</div>
+							
+							
+							
+							</section>
+							
+							
+							<section id="materials">
+							<div class="row">
+							<div class="col-12">
+							<h3><b>2. Materials and methods</b></h3>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">							
+							<h5><i>2-1. Reagents and cells</i></h5>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							
+							<p>Genipin and 3,3’-dithiobis (sulfosuccinimidyl propionate) (DTSSP) were obtained from Wako Chemicals and 4C Pharma Scientific Inc, respectively. Dulbecco’s Modified Minimal Essential Medium (DMEM) and fetal bovine serum were from Hyclone. Span 80, Tween 80, DAPI, doxorubicin (DOX) and antibody against β-actin were obtained from Sigma-Aldrich. WST-8 reagent came from Dojindo Labs. Antibodies against caspase-3 and cleaved caspase-3 were from Cell Signaling and antibodies against PARPs were from Santa Cruz. The A549 lung adenocarcinoma cells, BEAS-2B bronchial epithelial cells, H1299 non-small cell lung carcinoma cells and Lewis lung carcinoma (LL2) cells were all obtained from the Bioresource Collection and Research Center (Hsinchu, Taiwan).</p>
+							</div>
+							</div>
+							
+							
+							
+							<div class="row">
+							<div class="col-12">							
+							<h5><i>2-2. Genomic DNA purification</i></h5>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							
+							<p>ddH2O (100 mL) was added to peeled kiwi fruit (New Zealand, 100 g) and homogenized into a juice solution. Neutral detergent (Micro-Scientific, 2.5 mL) was mixed with juice solution for 10 minutes, then 5 mL of 5 M NaCl were added for an extra 10 mins of incubation time. A final incubation period was done with bromelin (Sigma-Aldrich, 20 mg) for 30 min. The mixture (15 mL) was filtered with gauzes and precipitated with 99% ethanol (Sigma-Aldrich, 30 mL) to obtain DNA extract. After freeze-drying, the DNA extract (100 mg) was mixed thoroughly with 500 μL CTAB Buffer (10% Cetyltrimethyl ammonium bromide in H2O, 5 M NaCl, 0.5 M EDTA (pH 8.0), 1 M Tris-Cl (pH 8.0), 3% Polyvinylpyrrolidone (MW 40 kDa) and 0.2% β-Mercaptoethanol) in a 60°C bath for 30 min. After centrifuging for 5 min at 14,000×g, the supernatant was transferred to a new tube and 5 µL of RNase were added, allowing to incubate for 20 min at 32°C. A solution of chloroform/isoamyl alcohol (24:1) was added to the mixture in equal ratios and mixed thoroughly for 5 sec, then centrifuged to separate the phases. The supernatant was decanted into a new tube and the extraction was repeated until the supernatant was clear. Cold isopropanol was added to precipitate the DNA at quantities equal to 70% the volume of the mixture and allowed to sit at -20°C for 10 min. The sample was then centrifuged for 5 min at 14,000×g and washed with ice cold 70% ethanol solution. Finally, the pellet was allowed to dry in order to remove any remnants of alcohol, then dissolved in ddH2O for DNA nanoparticle preparation.</p>
+							</div>
+							</div>
+							
+							<div class="col-12">
+							<div>
+							<img class="adjustsize" src="img/exp-pro_1_.png" style="padding:0; margin-top:0.5em; margin-bottom:0.5em; " class="img-responsive center-block"/>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">							
+							<h5><i>2-3. Preparation of DNA nanoparticles</i></h5>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							
+							<p>The DNA nanoparticles (NP) were prepared using genipin or DTSSP as the cross-linking agent via a water-in-oil emulsion process. The aqueous phase was prepared by dissolving DNA (5 mg) in de-ionized water (0.5 mL) and then mixing immediately with an oil phase: Span 80 (100 mg) and Tween 80 (50 mg) dissolved in 4 mL n-hexane. The emulsified solution was then prepared by stirring for 10 min followed by pulsing through probe sonication (energy level: 700 kW, SonicsÒ VCX750, Vibra-Cell Ultra Sonics Processor) for 5 min in an ice bath. The sonication cycle was set to pulses of 5 secs followed by a stop for 10 secs. The cross-linking agent containing genipin or DTSSP was added in a 1:1 molar ratio to the emulsified solutions and pulsed again for 5 min in an ice bath. The molar ratio of cross-linking agent to amino group was set to be 0.5. The reaction mixture was pulsed for another 5 min in an ice bath and stirred at 350 rpm for 24 h. The emulsified solution was then centrifuged at 7000 rpm (Hitachi, ct15e) for 1 min. The aqueous phase was obtained by removing the supernatant and further extracted by adding n-hexane. The above process was repeated until the oil phase was colorless, indicating the removal of the surfactant. The purified nanoparticles were then diluted by adding saline solution after sonication.</p>
+							</div>
+							</div>
+							<div class="col-12">
+							<div>
+							<img class="adjustsize" src="img/process.png" style="padding:0; margin-top:0.5em; margin-bottom:0.5em; " class="img-responsive center-block"/>
+							</div>
+							</div>
+							<div class="row">
+							<div class="col-12">							
+							<h5><i>2-4. Instumentation and characterizations</i></h5>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							
+							<p>Transmission electron microscopy (TEM) measurements were performed on a Hitachi H7500 microscope with a Tungsten lamp and an excitation voltage of 120 kV. The particle solution (10 μL) was placed on a carbon-coated copper grid and dried in air overnight before TEM characterization. Circular dichroism (CD) measurements were performed over a wavelength range from 190–260 nm on a JASCO J-815 spectrometer (JASCO, Japan). Small-angle X-ray scattering (SAXS) measurements of samples in a 1 mm quartz capillary were performed at 25℃ using a Bruker diffractometer (NanoSTAR U System, Bruker AXS GmbH, Karlsruhe, Germany), which was calibrated with a standard sample of silver behenate. The scattering wave vector (q = 4pλ-1sinθ) was defined by the scattering angle θ and λ. The background subtracted data was desmeared against the beam length profile of the source. The hydrodynamic diameter (size) and zeta potential of the nanoparticles were measured at an angle of 90 degrees using an Otsuka ELSZ-1000 light scattering system (Otsukaelectronic, Japan).</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">							
+							<h5><i>2-5. Evaluation of DOX release in vitro</i></h5>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							
+							<p>The dialysis bag (MWCO 3.5 KDa) containing 3 mL genipin-cross-linked or DTSSP-cross-linked DOX-loaded DNA NPs were introduced into a glass vial containing 30 mL PBS (0.01 N, pH 5.5 or pH 7.4) with different concentrations of GSH (0 and 10 mM). The glass vial was placed in a thermal bath with a shaking rate of 100 rpm at 37 ± 1℃. The dialyzate was taken periodically and characterized using UV-Vis spectrophotometer (SCINCO, S-3100) at a wavelength of 485 nm. The solution was then poured back to the vial and each experiment was performed triples.</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">							
+							<h5><i>2-6. Cell culture and cell viability assay</i></h5>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							
+							<p>A549, BEAS-2B, H1299 and LL2 cells were cultured in DMEM supplemented with 10% (v/v) fetal bovine serum, 2 mM L-glutamine and 50 μg/ml gentamicin at 37°C in 5% CO2. Cells were cultured in 96-well plates at a density of 1 × 104 cells/well in 10% FBS DMEM and treated with various concentrations of DNA NPs, DOX, genipin-cross-linked and DTSSP-cross-linked DOX-loaded DNA NPs. After 24 h incubation, cell proliferation was evaluated using WST-8 reagent (Dojindo Molecular Laboratories, Kumamoto, Japan). The supernatant medium was transferred to 96-well plates, and the absorbance of the solution was measured on VersaMax Microplate Reader (Molecular Devices, Sunnyvale, CA, USA)) at 450 nm. Cell viability (%) was calculated using the following equation: Cell viability (%) = [(Abs450 nm in the treated sample cells – Abs405 nm in blank)/(Abs450 nm in untreated control cells − Abs405 nm in blank)] × 100.</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">							
+							<h5><i>2-7. Hemolysis assay</i></h5>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							
+							<p>Human red blood cells (hRBC) were centrifuged, washed three times with sterile saline (Jason, Taipei, Taiwan) and resuspended in saline. Then, 100 μL of DNA NPs solution were added to 100 μL of 10% (v/v) RBCs in sterile 96-well plates, which were incubated for 1 h at 37 °C and subsequently centrifuged at 1000 × g for 5 min. The supernatant was transferred to fresh 96-well plates and the hemoglobin release was measured using a microplate reader testing absorbance at 405 nm. Zero and 100% hemolysis were determined in saline and 0.1% Triton X-100, respectively. Percent hemolysis was calculated as [(Abs405 nm in the DNA NPs solution – Abs405 nm in saline)/(Abs405 nm in 0.1% Triton X-100 − Abs405 nm in saline)] × 100.</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">							
+							<h5><i>2-8. Cellular uptake assays</i></h5>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							
+							<p>A549 cells were cultured in 12-well plates at a density of 1 × 105 cells/well and incubated with free DOX or DTSSP-cross-linked DOX-loaded DNA NPs at 5 μg/mL. For inverted fluorescent microscopy, after being incubated for 1 h, the cells were washed 3 times with PBS and fixed with cold methanol for 10 min. Nuclei were counterstained with DAPI (0.1 µg/mL) for 10 min and washed 3 times with PBS. The cellular localization and intracellular DOX were performed using an inverted fluorescence microscope (Olympus, IX71). For flow cytometry analysis, after being incubated for 1 h, the cells were trypsinized and suspended in cold PBS. The mean fluorescence intensity was determined with 1×104 cells and analyzed using flow cytometry (FACS caliber, Becton Dickinson) according to the manufacturer’s instructions.</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">							
+							<h5><i>2-9. Immunoblot analysis</i></h5>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							
+							<p>The cells were treated with or without various concentrations of DOX or DTSSP-cross-linked DOX-loaded DNA NPs for 24 h followed by washing with saline 3 times and ending with homogenization using RIPA lysis buffer (150 mM NaCl, 50 mM Tris-HCl, 2 mM EDTA, pH 8.0, 20 μg/mL leupeptin, 20 μg/mL aprotinin, 50 mM NaF, 1 mM Na3VO4, and1 mM PMSF). The cell lysates were analyzed by immunoblotting with primary antibodies against caspase-3 (#9662, Cell Signaling), PARP (sc-53643, Santa Cruz) and β-actin (A3854, Sigma-Aldrich) followed by the appropriate secondary antibodies. Immunoreactive protein bands were detected using an enhanced chemiluminescence (ECL) kit (Pierce Biotechnology, Rockford, IL). The relative intensities of the protein bands were normalized to that of β-actin and quantified using Image J software (available at http://rsb.info.nih.gov/ij/).</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">							
+							<h5><i>2-10. Statistical analysis</i></h5>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							
+							<p>The results are reported as the means ± SEM (n=3). The statistical differences were analyzed using two-way ANOVA and Unpaired Student’s t test. Statistical significance was set to *p<0.05, **p<0.01, and ***p<0.001.</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+								<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+							</div>
+							</div>
+							</section>
+							
+							
+							
+							
+							
+							
+							
+							<section id="experiment">
+							
+							<div class="row">
+							<div class="col-12">
+							<h3><b>3. Experimental results</b></h3>
+							</div>
+							</div>
+							
+							
+							<div class="row">
+							<div class="col-12">
+							<h5><i>3-1. Synthesis and characterization of DNA NPs and DNA-DOX NPs</i></h5>
+							</div>
+							</div>
+							
+							
+							
+							
+							
+							<div class="row">
+							<div class="col-12">
+							<p>The preparation of DNA NPs was achieved by emulsifying water droplets containing genomic DNA in an oil phase using surfactants. TEM analysis revealed that the DNA NPs exhibited spherical morphology (Fig. 1a-d) and that DOX-encapsulated DNA NPs (DNA-DOX NPs) were larger than the DNA NPs alone (Fig. 1b). The size of the DNA-DOX NPs was homogeneous overall (Fig. 1c) and the outer shell of the DNA NPs was clearly seen (Fig. 1d). Based on TEM images, the size of the DNA NPs was smaller than that determined by DLS analysis, which can be attributed to the shrinkage of the NPs upon drying (Table 1). CD analysis revealed that DNA-DOX NPs adopted a random coil conformation under neutral conditions, as can be seen from the well-known doubly inflected curve. In addition, the CD spectra of genomic DNA indicated the presence of a maximum at 238 nm, suggesting that the DNA segment is different to that of free DOX (Fig. 1e). The SAXS analysis of the DNA NPs and DNA-DOX NPs solutions indicated scattering intensities (I) with I (q) α q-n at low scattering vectors (q) of -4, indicating the formation of nanoparticles (Fig. 1f). Zeta potential measurements of these DNA NPs revealed that they carried negative charge with high charge density, as can be seen by the negative zeta potential values. The presence of phosphate residue resulted in these nanoparticles carrying negative charge (Table 1).</p>
+							</div>
+							</div>
+							
+							
+							<div class="row">
+							
+							<div class="col-10 col-lg-3" style="padding:0 0 0 0.5em; margin-right:0;">
+							<div>
+							<img class="adjustsize" src="img/exp-3_12_.jpg" style="padding:0; " class="img-responsive center-block"/>
+							</div>
+							</div>
+							
+							<div class="col-10 col-lg-3" style="padding:0 0 0 0.5em; margin-left:0;">
+							<div>
+							<img class="adjustsize" src="img/exp-4_12_.png" style="padding:0;" class="img-responsive"/>
+							</div>
+							</div>
+							
+							</div>
+							<div class="row">
+							
+							<div class="col-10 col-lg-3">
+							<div>
+							<img class="adjustsize" src="img/exp-5_6_.jpg" style="padding:0; margin-top:0.5em;" class="img-responsive center-block"/>
+							</div>
+							</div>
+							
+							<div class="col-10 col-lg-3">
+							<div>
+							<img class="adjustsize" src="img/exp-6_6_.jpg" style="padding:0; margin-top:0.5em;" class="img-responsive"/>
+							
+							</div>
+							</div>
+							
+							</div>
+							
+							<div class="row">							
+							<div class="col-12">
+							<p><b>Figure 1. Characteristics of DNA NPs.</b> TEM images of (a) DNA NPs, (b-c) DOX-loaded DNA NPs and (d) anthocyanin-loaded DNA NPs. White lines indicated cross-linked DNA shell of nanoparticles in (d). The DNA concentration of (a), (b), (c) and (d) were 0.5, 0.5, 1 and 0.5 mg/mL, respectively. (e) CD spectra of free DOX, dsDNA, and DNA-DOX NPs. The DOX or DNA concentrations of DOX, dsDNA and DNA-DOX NPs were 1, 0.5, and 0.5 mg/mL, respectively. (f) SAXS patterns of DNA NPs and DNA-DOX NPs. The DNA concentrations of DNA NPs and DNA-DOX NPs were 2 mg/mL.</p>
+							</div>		
+							</div>
+							
+							<div class="row">							
+							<div class="col-12">
+							<p><b>Table 1. Hydrodynamic diameter (size) and zeta potential of DNA and cross-linked, DOX-loaded DNA NPs in ddH2O and PBS (0.01 N)</b></p>
+							</div>		
+							</div>
+							<div class="row table" >
+							
+							<table border="2" class="col-12" align="left">
+							<tr>
+							<td width="12%" bgcolor=lightblue><b>Solvent, pH value</b></td>
+							<td colspan="4" ><b>ddH2O,pH7</b></td>
+							<td colspan="4"><b>PBS,pH5.5</b></td>
+							<td colspan="4"><b>PBS,pH7.4</b></td>
+							</tr>
+							
+							<tr>
+							<td  bgcolor=lightblue><b>Cross-linker</b></td>
+							<td colspan="2">genipin</td>
+							<td colspan="2">DTSSP</td>
+							<td colspan="2">genipin</td>
+							<td colspan="2">DTSSP</td>
+							<td colspan="2">genipin</td>
+							<td colspan="2">DTSSP</td>
+							</tr>
+							
+							<tr>
+							<td  bgcolor=lightblue><b>Nanoparticles</b></td>
+							<td>DNA</td>
+							<td>DNA-DOX</td>
+							<td>DNA</td>
+							<td>DNA-DOX</td>
+							<td>DNA</td>
+							<td>DNA-DOX</td>
+							<td>DNA</td>
+							<td>DNA-DOX</td>
+							<td>DNA</td>
+							<td>DNA-DOX</td>
+							<td>DNA</td>
+							<td>DNA-DOX</td>
+							</tr>
+							
+							<tr>
+							<td  bgcolor=lightblue><b>DLS(nm)</b></td>
+							<td>82± 5.71</td>
+							<td>117± 4.26</td>
+							<td>95.53± 4.51</td>
+							<td>91.6± 5.12</td>
+							<td>91.47± 5.04</td>
+							<td>198.2± 6.46</td>
+							<td>74.4± 4.92</td>
+							<td>118.2± 5.31</td>
+							<td>58.4± 4.82</td>
+							<td>112.6± 6.17</td>
+							<td>110.6± 5.32</td>
+							<td>116.5± 4.62</td>
+							</tr>
+							
+							<tr>
+							<td  bgcolor=lightblue><b>Zeta-potential (mV)</b></td>
+							<td>-69.21± 2.11</td>
+							<td>-54.22± 3.43</td>
+							<td>-32.4± 2.01</td>
+							<td>-30.2± 1.79</td>
+							<td>-5.09± 2.22</td>
+							<td>-4.67± 3.18</td>
+							<td>-9.77± 1.35</td>
+							<td>-5.6± 1.04</td>
+							<td>-6.27± 3.89</td>
+							<td>-1.57± 3.63</td>
+							<td>-14.6± 2.03</td>
+							<td>-12.9± 1.47</td>
+							</tr>
+							</table>
+							</div>
+							
+							
+							
+							
+							
+							
+							
+							
+														
+							<div class="row">
+							<div class="col-12">
+							<h5><i>3-2. Drug release of DNA-DOX NPs in vitro</i></h5>
+							</div>
+							</div>
+							
+							
+							
+							
+							
+							<div class="row">
+							<div class="col-12">
+							
+							<p>The potential application of the cross-linked DNA NPs as drug carriers was evaluated upon loading DOX, an anticancer drug, into the NPs. DNA was used to prepare NPs by cross-linking amino groups (NH2) on nitrogen bases (ACG) using genipin or DTSSP (Scheme 1). In order to evaluate the properties of DNA NPs and whether the DOX of DNA-DOX NPs could be released in acidic cancerous environments, we analyzed the effect of pH values on DNA NPs and DNA-DOX NPs. As shown in Fig 2a, the sizes of the DNA NPs and DNA-DOX NPs decreased upon increasing the pH of the solution. Zeta potential measurements showed that the DNA NPs and DNA-DOX NPs were negatively charged, possibly due to phosphate groups, since an apparent decrease in overall negative charge was seen upon increasing the pH of the solution (Fig 2b). In addition, DNA-DOX NPs appeared larger than DNA NPs using hydrodiameter detection; zeta potential analyses also showed the DNA-DOX NPs to be more negatively charged than their DNA NPs counterparts. These results suggest that encapsulated drugs affect surface properties of the DNA NPs. Moreover, as shown in Fig 2c, DNA-DOX NPs (cross-linked by genipin) exhibited significantly greater DOX-releasing activity at pH 5.5 compared to pH 7.4 (p < 0.001).</p>
+							<p>Next, the genipin cross-linker was changed to DTSSP in order to evaluate GSH redox potential. The reduction responsive DOX release from the DNA-DOX NPs (DTSSP) was investigated by measuring the DOX absorbance against PBS in 10 mM GSH at pH 5.5 or pH 7.4 at different time courses upon dialyzing the DNA-DOX NPs solution. As shown in Fig 2d, the DOX releasing experiments showed that the cumulative DOX released from the DNA-DOX NPs increased with time and was significantly enhanced under 10 mM GSH at pH 5.5 or pH 7.4. (p < 0.001). These results reveal that acidic environments facilitate GSH’s role in triggering de-cross-linking through cleavage of the disulfide bonds in the NPs. This subsequently leads to the release of the drug (Scheme 1).</p>
+							</div>
+							</div>
+							
+							
+							<div class="row">
+							
+							<div class="col-9 col-lg-3">
+							<div>
+							<img class="adjustsize" src="img/exp-7_6_.jpg" class="img-responsive"/>
+							</div>
+							</div>
+							
+							<div class="col-9 col-lg-3">
+							<div>
+							<img class="adjustsize" src="img/exp-8_6_.jpg" class="img-responsive"/>
+							</div>
+							</div>
+							<div class="col-12 col-lg-3">
+							<div>
+							
+							</div>
+							</div>
+							</div>
+							<div class="row">
+							
+							<div class="col-9 col-lg-3">
+							<div>
+							<img class="adjustsize" src="img/exp-9_6_.jpg" style="padding:0.5em; margin-left:0.5em;"class="img-responsive center-block"/>
+							</div>
+							</div>
+							
+							<div class="col-9 col-lg-3">
+							<div>
+							<img class="adjustsize" src="img/exp-10_6_.jpg" style="padding:0.5em; margin-left:0.5em;" class="img-responsive"/>
+							
+							</div>
+							</div>
+							
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<p><b>Figure 2. PH effect of size and zeta potential, and DOX releasing of DNA NPs.</b>
+							(a) Hydrodynamic diameters of DNA NPs and DNA-DOX-NPs under different pH values in PBS (0.01 N). (b) Zeta potential of DNA NPs and DNA-DOX-NPs under different pH values in PBS (0.01 N). (c) Cumulative DOX release of genipin-cross-linked, DOX-loaded DNA NPs under different pH values (pH 5.5 and 7.4). (d) Cumulative DOX release of DTSSP-cross-linked, DOX-loaded DNA NPs at GSH concentrations (0, 10 mM) under different pH values (pH 5.5 and 7.4). All data were statistically analyzed using a two-way ANOVA test (n = 3).
+							</p>
+							</div>
+							
+							
+							
+							</div>
+							
+							
+							
+							<div class="row">
+							<div class="col-12">
+							<h5><i>3-3. In vitro cytotoxicity and anticancer effect</i></h5>
+							</div>
+							</div>
+							
+							
+							<div class="row">
+							<div class="col-12">
+							
+							<p>The cytotoxic effect of DNA NPs, DOX, and DNA-DOX NPs against BEAS-2B, A549, H1299 and LL2 cells were subsequently analyzed using the WST-8 assay. As shown in Fig. 3a, cell viabilities were found to be higher than 90% at DNA NP concentrations below 4 mg/mL, suggesting that the DNA NPs were barely cytotoxic toward these cells. Hemolytic activities of the DNA NPs were measured against human RBCs as shown in Fig. 3b. Regardless of concentrations, the DNA NPs exhibited low hemolytic activity. Next, the morphologies of H1299 cells after treatment with DOX, DNA-DOX NPs (genipin) or DNA-DOX NPs (DTSSP) in two concentrations of DOX (1.25 or 2.5 μg/mL) were analyzed using light microscopy. As shown in Fig. 3c, cells treated with DNA NPs (2.5 or 5μg/mL) grew just as well as the control group. Comparing the DOX-treated groups, cells treated with DNA-DOX NPs were more damaged than those in the free DOX group. Moreover, cells treated with DNA-DOX NP (DTSSP) were fewer in number than those treated with DNA-DOX NPs (genipin). The cytotoxicity of DOX, DNA-DOX NPs (genipin) and DNA-DOX NPs (DTSSP) in these cells is shown in Fig. 3d–g and the IC50 values are listed in right panel. These results demonstrate that the cytotoxicity of both DOX and DOX-NP solutions were dependent on concentrations. After treatment with various concentrations for 24 h, the DNA-DOX NPs (DTSSP) demonstrated higher cytotoxicity than those of DOX and DNA-DOX NP (genipin) solutions, except on BEAS-2B cells. Interestingly, DNA-DOX NPs exerted greater cytotoxicity at lower concentrations. As shown in Fig. 3a-d, the IC50 values of DOX-NPs ranged from 1.07 to 2.62 μg/mL, which were significantly less than those of DOX solutions (2.92–18.9 μg/mL) for the same cells.</p>
+							</div>
+							</div>
+							
+							
+							
+							<div class="row">
+							
+							<div class="col-7 col-lg-3">
+							<div>
+							<img src="img/exp-11_5_.jpg" style="padding:0;" class="img-responsive center-block"/>
+							</div>
+							</div>
+							
+							<div class="col-12 col-lg-6">
+							<div>
+							<img src="img/exp-12.jpg" style="padding:0; margin-top:0.25em;" class="img-responsive"/>
+							</div>
+							</div>
+							
+							</div>
+							<div class="row">
+							
+							<div class="col-11 col-lg-5" style="padding:0;">
+							<div>
+							<img src="img/exp-13-1_12_.jpg" class="img-responsive"/>
+							</div>
+							</div>
+							<div class="col-11 col-lg-5" style="padding:0;">
+							<div>
+							<img src="img/exp-13-2_12_.jpg" class="img-responsive"/>
+							</div>
+							</div>
+							
+							
+							</div>
+							<div class="row">
+							
+							<div class="col-12">
+							<p><b>Figure 3. In vitro cytotoxicity of DNA NPs, DOX and DOX-loaded DNA NPs (DNA-DOX NPs).</b>(a) BEAS-2B cells were treated with various concentrations of DNA NPs for 24 h. (b) Percentage of hemoglobin in the saline analyzed at 405 nm by ELISA reader upon treating human RBCs with DNA NPs for 1 h. (c) H1299 cells were treated with various concentrations of DOX, genipin-cross-linked DNA-DOX NPs and DTSSP-cross-linked DNA-DOX NPs for 20 h. Cell morphology was observed using light microscopy (original magnification x100). (d-g) Cells were treated with various concentrations of DOX and DNA-DOX NPs for 24 h. Cell proliferation was measured by WST-8 assay and IC50 values are shown in the right panel. All data were statistically analyzed using two-way ANOVA tests (n = 3).</p>
+							</div>
+							
+							
+							</div>
+							
+							
+							
+							
+							<div class="row">
+							<div class="col-12">
+							<h5><i>3-4. Enhanced intracellular DOX uptake and apoptotic cell death</i></h5>
+							</div>
+							</div>
+							
+							
+							<div class="row">
+							<div class="col-12">
+							
+							<p>DOX is known to intercalate into DNA, causing DNA breaks and interfering with DNA synthesis[1]. In our final analysis, intracellular DOX uptake was detected to elucidate any higher cytotoxicity that the DNA-DOX NPs might have: the deeper the red fluorescence in cells, the higher the intracellular concentration of DOX. After treatment with DOX-NPs for 1 h, the intracellular fluorescence increased as compared with DOX-treated cells. Fig. 4a shows a markedly increased red fluorescence in A549 cells observed using an inverted fluorescence microscope. Flow cytometry results (Fig. 4b–c) were in line with said observations. The mean fluorescence intensity in A549, H1299, and LL2 cells treated with DNA-DOX NPs (DTSSP) was distinctly higher than cells treated with DOX at equal concentrations (5 μg/mL). This indicates that the DNA-DOX NPs enhanced DOX uptake in A549, H1299, and LL2 cells, thus exerting greater cytotoxicity when compared to DOX solution (p < 0.001). Additionally, to verify whether DNA-DOX NPs could enhance DOX-induced cytotoxicity, signs of apoptotic molecules were detected. As shown in Fig. 5d, the DNA-DOX NPs induced H1299 cells to express higher cleaved caspase-3 and PARP proteins when compared with DOX solution after 24 h incubation. The results suggested that the DNA-DOX NPs were efficiently delivered into the nucleus to exert cytotoxicity.</p>
+							</div>
+							</div>
+							
+							
+							
+							<div class="row">
+							
+							<div class="col-12 col-lg-7">
+							<div>
+							<img src="img/exp-16.jpg" class="img-responsive"/>
+							</div>
+							</div>
+							<div class="col-6 col-lg-3">
+							<div>
+							<img src="img/exp-17.jpg" style="width:90%;"class="img-responsive"/>
+							</div>
+							</div>
+							</div>
+							
+							
+							<div class="col-12">
+							<p><b>Figure 4. In vitro enhanced apoptotic effects of DNA-DOX NPs in lung cancer cells.</b> (a) Representative fluorescent images of A549 cells after treatment with DOX or DNA-DOX NPs for 1 h observed using inverted fluorescence microscopy (Scale bar = 200 μm). (b) DOX fluorescence intensity of A549, H1299 and LL2 cells after incubating with DOX and DTSSP-cross-linked DNA-DOX NPs (DOX: 5 μg/mL) for 1 h were analyzed using flow cytometry. (c) Quantitative analysis of the mean fluorescence intensity of DOX in cells. (d) H1299 cells were treated with or without various concentrations of DNA NPs, DOX and DTSSP-cross-linked DOX-NPs for 24 h. Total cell lysates were subjected to immunoblotting for the detection of caspase-3, cleaved caspase-3, full length PARP and PARP. Histograms represent the relative expression levels quantified by densitometric analysis using ImageJ software and normalized according to the β-actin reference bands (n = 3; *p < 0.05, **p < 0.01 and ***p < 0.001).</p>
+							</div>
+						
+							
+							
+							
+							<div class="row">
+							
+							
+							<div class="col-12 col-lg-8">
+							<div>
+							<img src="img/exp-17.png" style="padding:0;"class="img-responsive"/>
+							</div>
+							</div>
+							</div>
+							
+							
+							<div class="row">
+							<div class="col-12 col-lg-9">
+							<div>
+							<img src="img/exp-18.png" style="padding:0;"class="img-responsive"/>
+							</div>
+							</div>
+							</div>
+							
+							
+							<div class="row">
+							<div class="col-12 col-lg-7">
+							<div>
+							<img src="img/exp-19.png" style="padding:0;" class="img-responsive"/>
+							</div>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12 col-lg-7">
+							<div>
+							<img src="img/exp-20.png" style="padding:0;"class="img-responsive"/>
+							</div>
+							</div>
+							</div>
+							
+							
+							
+							<div class="row">
+							
+							
+							<div class="col-3 col-lg-1">
+							
+							</div>
+							<div class="col-6 col-lg-3">
+							<div>
+							<img src="img/exp-19-1.png" style="top:50%; margin-top:3.5em;" class="img-responsive adjustsize2"/>
+							</div>
+							</div>
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-10 col-lg-6">
+							<div>
+							<img src="img/exp-20.png"  style="padding:2em;" class="img-responsive adjustsize2"/>
+							</div>
+							
+							</div>
+							<div class="col-3 col-lg-1">
+							
+							</div>
+							<div class="col-6 col-lg-3">
+							<div>
+							<img src="img/exp-20-1.png" style="top:50%; margin-top:3.5em;"class="img-responsive adjustsize2"/>
+							</div>
+							</div>
+							</div>
+							
+							
+							
+							<div class="row">
+							
+							<div class="col-12 col-md-6">
+							<p>測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試</p>
+							</div>
+							
+							<div class="col-12 col-md-6">
+							<p>測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試測試</p>
+							</div>
+							
+							</div>
+							
+							
+							<div class="row">
+							<div class="col-12">
+								<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+							</div>
+							</div>
+							</section>
+					
+				</main>
+			
+			
+		</div>
+		
+		</div>
+		</div>
+				<footer id="footer" >
+			<div>
+				<p>© 2019 by NCKU-BIOMOD. Animation credits to Rachel Smith and Lucas Bedder.</p>
+			</div>
+			
+		</footer>
+		
+		
+		</div>
+		</div>
+		</div>
+		
+		<script>
+		var loader = document.getElementById("loader");
+		window.addEventListener("load",function(){
+		loader.style.height="100%";
+		loader.style.width="100%";
+		loader.style.visibility="hidden";
+		});	
+		</script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/solid.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/regular.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/fontawesome.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		
+		<script>
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+		  dropdown[i].addEventListener("click", function() {
+		  this.classList.toggle("active");
+		  var dropdownContent = this.nextElementSibling;
+		  if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+		  } else {
+		  dropdownContent.style.display = "block";
+		  }
+		  });
+		}
+		</script>
+		
+	</body>
+</html>

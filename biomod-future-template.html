@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		nckuonawebsite
+		</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Hanalei&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link rel="Shortcut Icon" type="image/x-icon" href="img/bluesub.ico" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+		<style type="text/css">
+		body{
+		background:url(img/bg.jpg) ;
+		background-size:cover;
+		background-attachment:fixed;
+		}
+		@media all and (-ms-high-contrast:none){
+		body{
+		background:url(img/bg-1.png);		
+		background-size:cover;
+		background-attachment:fixed;		
+		}
+		}
+		.container{
+		margin-top:0px;
+		padding:0px;
+		background:white;
+		width:100%;
+		background:transparent;
+		}
+		
+		.contents{
+		background:white;
+		margin-bottom:5em;
+		padding-bottom:2em;}
+		
+		#contents{
+		padding-right:0.8em;
+		padding-left:0.8em;
+		padding-top:0;
+		margin-top:0em;}
+		
+		#header{
+		height:20%;}
+		
+		#footer{
+		color:white;
+		font-family: 'Exo 2', sans-serif;
+		text-align:center;
+		}
+
+		#header{
+		font-family: 'Exo 2', sans-serif;
+		text-align:left;
+		}
+		
+		h2{
+		font-family: 'Abril Fatface', cursive;}
+				
+		#submarine-head{		
+		padding:0px;
+		margin:0;}
+		
+		#submarine-bottom{
+		padding:0px;
+		margin:0;}
+		
+		.navbar navbar-expand-lg navbar-light bg-light{
+		margin:0;}
+		
+		img{		
+		width:100%;
+		padding:1em;
+		margin:0.8px;
+		text-align:center;
+		}
+		
+		#logo{		
+		width:100%;
+		padding:1em;
+		margin:0.8px;
+		text-align:center;
+		margin-right:0.4em;
+		}
+		
+		/* Style the sidenav links and the dropdown button */
+		.sidenav a {
+		  padding: 4px 8px 6px 1px;
+		  text-decoration: none;
+		  font-size: 1.3em;
+		  font-family: 'Oswald', sans-serif;
+		  
+		  color: #FFFFFF;
+		  display: block;
+		  border: none;
+		  background: none;
+		  width: 100%;
+		  text-align: left;
+		  cursor: pointer;
+		  outline: none;
+		  text-align:left;
+		}
+		
+		.dropdown-btn {
+		  padding: 5px 8px 6px 9px;
+		  text-decoration: none;
+		  font-size: 1.3em;
+		  color: #FFFFFF;
+		  display: block;
+		  border: none;
+		  background: none;
+		  width: 100%;
+		  text-align: left;
+		  cursor: pointer;
+		  outline: none;
+		  text-align:left;
+		  font-family: 'Oswald', sans-serif;
+		}
+		
+		.sidenav-head{
+		height:23%;}
+		
+		/* On mouse-over */
+		.sidenav a:hover, .dropdown-btn:hover {
+		  color: #FFFFFF;
+		  font-weight:bold;
+		}
+
+		/* Main content */
+		.main {
+		  margin-left: 200px; /* Same as the width of the sidenav */
+		  font-size: 20px; /* Increased text to enable scrolling */
+		  padding: 0px 10px;
+		}
+		
+		
+		/* Add an active class to the active dropdown button */
+		.active {
+		  background-color:;
+		  color: white;
+		}
+
+		/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+		.dropdown-container {
+		  display: none;
+		  background-color: #262626;
+		  padding-left: 8px;
+		}
+		
+		/* Optional: Style the caret down icon */
+		.fa-caret-down {
+		  float: right;
+		  padding-right: 5px;
+		  padding-top:0px;
+		  margin-top:0px;
+		}
+		
+		
+		
+		.button{background: transparent;
+			margin:0px;
+			margin-left:0;
+			width:100%;
+			height:7%;
+			text-align:left;
+			text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.9);
+			border-right:2px white solid;
+			border-left:2px white solid;
+			
+			border-top:1px white solid;
+			border-bottom:2px white solid;
+			
+			
+			transition: 0.5s;
+			position: relative;
+			overflow: hidden;
+		}
+		
+		
+		
+		.button:hover {
+			
+			text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.9);
+			background:rgba(255,255,255,0.5);
+			
+		}
+
+		.button::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to right, transparent, white, transparent);
+			left: -100%;
+			transition: 0.5s;
+		}
+		
+		
+		
+		
+		
+		.glow {
+		  font-size: 80px;
+		  font-weight:bold;
+		  color: #DDDDDD;
+		  text-align: center;
+		  -webkit-animation: glow 1s ease-in-out infinite alternate;
+		  -moz-animation: glow 1s ease-in-out infinite alternate;
+		  animation: glow 1s ease-in-out infinite alternate;
+		}
+
+		@-webkit-keyframes glow {
+		  from {
+			text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff,0 0 5px #fff;
+		  }
+		  
+		  to {
+			text-shadow: 0 0 6px #fff, 0 0 7px #00BBFF, 0 0 8px #00BBFF ,0 0 9px #00BBFF,0 0 10px #00BBFF;
+		  }
+		}
+
+		
+		
+		.row{
+		padding-right:0.8em;
+		padding-left:0.8em;
+		margin-button:0.8em;}
+		
+		.legend{
+		margin:0.25em;
+		padding:0.25em;}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/* Some media queries for responsiveness */
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;
+		  }
+		  .sidenav a {font-size: 18px;}
+		 }
+		 
+		
+		
+		@media only screen and (max-width:768px){
+		.sidenav{
+		  display:block;
+		  height: 100%;
+		  width:16.7%;
+		  position: absolute;
+		  z-index: 1;
+		  top: 0%;
+		  left: 0;
+		  overflow-x:hidden;		  
+		  background:linear-gradient(to right,rgba(68,68,68),rgba(136,136,136));}
+		}
+		
+		@media only screen and (min-width:768px){
+		.sidenav {
+		  height: 100%;
+		  width:16.7%;
+		  position: fixed;
+		  z-index: 1;
+		  top: 0%;
+		  left: 0;		  
+		  overflow-x:hidden;		  
+		  background:transparent;
+		}
+		}
+		
+		@media only screen and (min-width:990px){
+		#name-of-project{font-family: 'Montserrat', sans-serif;
+		font-size:5em; text-align:center;
+		}
+		}
+		
+		@media only screen and (max-width:990px){
+		#name-of-project{font-family: 'Montserrat', sans-serif;
+		font-size:3.2em; text-align:center;
+		}
+		}
+		
+		@media only screen and (min-width:990px){
+		#info{
+		font-size:1em;
+		padding-left:30px;
+		color:#DDDDDD;
+		margin-top:1.0em;}
+		}
+		
+		@media only screen and (max-width:990px){
+		#info{
+		font-size:0.75em;
+		padding-left:30px;
+		color:#DDDDDD;
+		margin-top:1.0em;}
+		}
+		
+		@media only screen and (min-width:990px){
+		.navbar-brand{
+		font-family: 'Montserrat', sans-serif;
+		color:white;
+		font-weight:bold;
+		font-size:2.5em;}
+		}
+		
+		@media only screen and (min-width:990px){
+		.nav-link{
+		font-family: 'Montserrat', sans-serif;
+		font-weight:light;
+		font-size:1.6em;}
+		}
+		
+		/*以下每個網頁都要*/
+		@media only screen and (max-width:990px){
+		.navbar-brand{
+		font-family: 'Montserrat', sans-serif;
+		color:white;
+		font-weight:bold;
+		font-size:2.5em;}
+		}
+		
+		@media only screen and (max-width:990px){
+		.nav-link{
+		font-family: 'Montserrat', sans-serif;
+		font-weight:light;
+		font-size:1.6em;}
+		}
+		
+		@media only screen and (min-width:990px){
+		#future-intro{		
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:4.0em;
+		margin:0.8em;}
+		}
+		
+		@media only screen and (max-width:990px) and (min-width:400px){
+		#future-intro{
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:3.0em;
+		margin:0.8em;}
+		}
+		
+		@media only screen and (max-width:400px){
+		#future-intro{
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:1.8em;
+		margin:0.8em;}
+		}
+		
+		
+		
+		.navbar{
+		overflow-y:visible;}
+		
+		#info a{
+		color:#DDDDDD;}
+		
+		.subnavdiv{
+		margin-top:0.5em;}
+		
+		#loader{
+		position:fixed;
+		z-index:10000;
+		width:100%;
+		height:100%;		
+		background:rgba(0,0,0,0.6);	
+		top:50%;
+		left:50%;		
+		transform:translate(-50%,-50%);
+		transition: 0.1s;
+		}
+		
+		#loader img{
+		position:absolute;
+		width:100px;
+		height:100px;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		}
+		.table{
+		width:100%;
+		padding:2em;}
+		
+		@media only screen and (min-width:768px){
+		#overview-RWD{display:none;
+		}}
+		
+		@media only screen and (max-width:768px){
+		#overview-laptop{display:none;
+		}}
+		
+		@media only screen and (min-width:1250px){
+		#navbarNavAltMarkup{
+		font-size:1.0em;}
+		}
+		
+		@media only screen and (min-width:768px) and (max-width:1249px) {
+		#navbarNavAltMarkup{
+		font-size:0.70em;}
+		}
+		.dropdown-item:hover{
+		background:#00BBFF;
+		color:white;
+		font-weight:bold;
+		}
+		</style>
+		
+		
+		
+	</head>
+	<body id="home" style=cursor:url(img/whitesub.cur),auto;>
+	<div id="loader">
+	<img src="img/subgif.gif"/>
+	</div>
+	<div class="container-fluid">
+	
+	<div class="row">
+	
+	
+	<div class="col-12">
+	
+	
+	
+	
+	<div  class="container ">
+	
+		<header id="header">
+		
+		<div class="header">
+		
+				<div class="row d-flex  align-items-center" >
+					
+					<div class="col-12 col-md-4"><a href="./index.html"><img src="img/sign-high.png" id="logo"   class="img-fluid" width="400px"></a></div> <!--team logo於header左邊-->
+					<p id="name-of-project" class="col-12 col-md-4 glow">NCKU ONA</p>
+					
+					<dl id="info" class="col-12 col-md-4">
+					
+						<dt><i class="far fa-envelope fa-2x"></i></dt><dd><a href="mailto:weichenlin28571653@gmail.com">biomodnckuona@gmail.com</a></dd>
+						<dt><i class="fas fa-home fa-2x"></i></dt><dd>No.1, University Road, East District, Tainan, Taiwan 701 </dd>
+					
+					</dl>
+					
+					
+				</div>
+		</div>
+			
+		</header>
+		
+		<div class="contents" style="cursor:default;">
+		
+		
+		<nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+			  <a class="navbar-brand" href="#home">BIOMOD</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="./index.html">Home</a>
+					<a class="nav-item nav-link " href="./biomod-video-template.html">Video</a>
+					<a class="nav-item nav-link " href="./biomod-overview-template.html">Overview</a>
+					
+					
+					
+					<li class="nav-item dropdown" >
+					<a class=" nav-link  dropdown-toggle" href= id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Lab
+					</a>				
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					 <a class="dropdown-item" href="./biomod-exp-operation-template.html">Lab-Operation</a>
+					  <a class="dropdown-item" href="./biomod-exp-result-template.html">Lab-Results</a>
+					</div>
+					</li>
+					<a class="nav-item nav-link "  href="./biomod-future-template.html">Future</a>
+					<a class="nav-item nav-link" href="./biomod-team-template.html">Members</a>
+					<a class="nav-item nav-link" href="./biomod-sponsors-template.html" >Sponsors</a>
+					
+				</div>
+			  </div>
+		</nav>
+	
+		
+		
+	
+		
+		
+		
+		
+					
+		
+		<div id="contents" >
+				
+					<main id="main">
+							
+							<div class="row">
+							<div class="col-12">
+							<p id="future-intro">Future-Prospects</p>
+							</div>
+							</div>
+							
+							<section id="advantages" style="margin-top:50px;">
+							<div class="row">
+							<div class="col-12">
+							<h3><b>1. Advantages</b></h3>
+							</div>
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>1-1. High Biocompatibility</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<p>DNA is a natural substance that owns its high biocompatibility to its origins in living systems. DNA can be completely catabolized by organisms and it does not accumulate in the body or cause chronic toxicity.</p>
+							</div>		
+							</div>
+							
+							
+							
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>1-2. Low Cytotoxicity</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<p>Using DNA as a biological vector won’t trigger immune-responses or electric reactions that affect cellular transmission chains. Thus, it won’t result in acute inflammation, allergies or other side effects that are seen with artificial amphiphilic carriers.</p>
+							</div>		
+							</div>
+							
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>1-3. Stability in vivo</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<p>ONA the DNA NP maintains its stability in vivo. Unlike DNA origami, whose structure is connected by hydrogen bonds that are easily broken when traveling through the bloodstream, the covalent bonds of cross-linked DNA provide more stable connections. This feature can efficiently lower the risk of prematurely releasing the drug during delivery.</p>
+							</div>		
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>1-4. Controllable Sizes</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<p>The DNA NP sizes are controllable and can be determined by fine-tuning the ultrasound step. For instance, in our experiments with DNA NPs encapsulating the anticancer drug DOX, ultrasound made the size of ONA the perfect fit to get into cancer cells exclusively and effectively.</p>
+							</div>		
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>1-5. Low Cost</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<p>Using DNA as a biological vector cost much cheaper than other artificial vectors on the market. In our experiments, the DNA we used to form our nanoparticles came from kiwi fruit; the type that can be picked up in any grocery store. One 100g kiwi fruit only cost 3 US dollars and can be used to extract 400 milligrams of DNA. It is efficient and won’t create much waste during the procedure. </p>
+							</div>		
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>1-6. Easy Preparation</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<p>After learning about the creation of ONA the DNA NP, you can also tell that the principles and techniques needed in the experiment are simple enough to be applied in any laboratory. In addition, ultrasound machines, surfactants and kiwi fruits are all common devices and materials that won’t require much effort to prepare. This simplicity gives ONA the DNA NP the advantage of being reproducible. </p>
+							</div>		
+							</div>
+							
+							</section>
+							
+							
+							
+						<section  id="future-prospects" style="margin-top:50px;">
+							<div class="row">
+							<div class="col-12">
+							<h3><b>2. Advantages</b></h3>
+							</div>
+							</div>
+						
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<p></p>
+							</div>		
+							</div>
+						
+						</section>
+
+							
+							
+							
+							
+							
+							
+							
+					
+				</main>
+			
+			
+		</div>
+		
+		</div>
+		</div>
+		
+				<footer id="footer" >
+			<div>
+				<p>© 2019 by NCKU-BIOMOD. Animation credits to Rachel Smith and Lucas Bedder.</p>
+			</div>
+			
+		</footer>
+		
+		</div>
+		</div>
+		</div>
+		
+		<script>
+		var loader = document.getElementById("loader");
+		window.addEventListener("load",function(){
+		loader.style.height="100%";
+		loader.style.width="100%";
+		loader.style.visibility="hidden";
+		});	
+		</script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/solid.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/regular.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/fontawesome.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		
+		<script>
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+		  dropdown[i].addEventListener("click", function() {
+		  this.classList.toggle("active");
+		  var dropdownContent = this.nextElementSibling;
+		  if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+		  } else {
+		  dropdownContent.style.display = "block";
+		  }
+		  });
+		}
+		</script>
+		
+	</body>
+</html>

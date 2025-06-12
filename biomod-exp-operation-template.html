@@ -1,0 +1,1431 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+		nckuonawebsite
+		</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Hanalei&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+		<link rel="Shortcut Icon" type="image/x-icon" href="img/bluesub.ico" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+		<style type="text/css">
+		
+		body{
+		background:url(img/bg.jpg) ;
+		background-size:cover;
+		background-attachment:fixed;
+		
+		}
+		@media all and (-ms-high-contrast:none){
+		body{
+		background:url(img/bg-1.png);		
+		background-size:cover;
+		background-attachment:fixed;		
+		}
+		}
+		
+		.container{
+		margin-top:0px;
+		padding:0px;
+		background:white;
+		width:100%;
+		background:transparent;
+		
+		}
+		
+		.contents{
+		background:white;
+		margin-bottom:5em;
+		padding-bottom:2em;}
+		
+		#contents{
+		padding-right:0.8em;
+		padding-left:0.8em;
+		padding-top:0;
+		margin-top:0em;}
+		
+		#header{
+		height:20%;}
+		
+		#footer{
+		color:white;
+		font-family: 'Exo 2', sans-serif;
+		text-align:center;
+		}
+
+		#header{
+		font-family: 'Exo 2', sans-serif;
+		text-align:left;
+		}
+		
+		h2{
+		font-family: 'Abril Fatface', cursive;}
+				
+		#submarine-head{		
+		padding:0px;
+		margin:0;}
+		
+		#submarine-bottom{
+		padding:0px;
+		margin:0;}
+		
+		.navbar navbar-expand-lg navbar-light bg-light{
+		margin:0;}
+		
+		img{		
+		width:100%;
+		padding:1em;
+		margin:0.8px;
+		text-align:center;
+		}
+		
+		#logo{		
+		width:100%;
+		padding:1em;
+		margin:0.8px;
+		text-align:center;
+		margin-right:0.4em;
+		}
+		
+		/* Style the sidenav links and the dropdown button */
+		.sidenav a {
+		  padding: 4px 8px 6px 1px;
+		  text-decoration: none;
+		  font-size: 1.3em;
+		  font-family: 'Oswald', sans-serif;
+		  
+		  color: #FFFFFF;
+		  display: block;
+		  border: none;
+		  background: none;
+		  width: 100%;
+		  text-align: left;
+		  cursor: pointer;
+		  outline: none;
+		  text-align:left;
+		}
+		
+		.dropdown-btn {
+		  padding: 5px 8px 6px 9px;
+		  text-decoration: none;
+		  font-size: 1.3em;
+		  color: #FFFFFF;
+		  display: block;
+		  border: none;
+		  background: none;
+		  width: 100%;
+		  text-align: left;
+		  cursor: pointer;
+		  outline: none;
+		  text-align:left;
+		  font-family: 'Oswald', sans-serif;
+		}
+		
+		.sidenav-head{
+		height:23%;}
+		
+		/* On mouse-over */
+		.sidenav a:hover, .dropdown-btn:hover {
+		  color: #FFFFFF;
+		  font-weight:bold;
+		}
+
+		/* Main content */
+		.main {
+		  margin-left: 200px; /* Same as the width of the sidenav */
+		  font-size: 20px; /* Increased text to enable scrolling */
+		  padding: 0px 10px;
+		}
+		
+		
+		/* Add an active class to the active dropdown button */
+		.active {
+		  background-color:;
+		  color: white;
+		}
+
+		/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+		.dropdown-container {
+		  display: none;
+		  background-color: #262626;
+		  padding-left: 8px;
+		}
+		
+		/* Optional: Style the caret down icon */
+		.fa-caret-down {
+		  float: right;
+		  padding-right: 5px;
+		  padding-top:0px;
+		  margin-top:0px;
+		}
+		
+		
+		
+		.button{background: transparent;
+			margin:0px;
+			margin-left:0;
+			width:100%;
+			height:7%;
+			text-align:left;
+			text-shadow: 6px 3px 2px rgba(0, 0, 0, 0.9);
+			border-right:2px white solid;
+			border-left:2px white solid;
+			
+			border-top:1px white solid;
+			border-bottom:2px white solid;
+			
+			
+			transition: 0.5s;
+			position: relative;
+			overflow: hidden;
+		}
+		
+		
+		
+		.button:hover {
+			
+			text-shadow: -6px 3px 2px rgba(0, 0, 0, 0.9);
+			background:rgba(255,255,255,0.5);
+			
+		}
+
+		.button::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(to right, transparent, white, transparent);
+			left: -100%;
+			transition: 0.5s;
+		}
+		
+		
+		
+		
+		
+		.glow {
+		  font-size: 80px;
+		  font-weight:bold;
+		  color: #DDDDDD;
+		  text-align: center;
+		  -webkit-animation: glow 1s ease-in-out infinite alternate;
+		  -moz-animation: glow 1s ease-in-out infinite alternate;
+		  animation: glow 1s ease-in-out infinite alternate;
+		}
+
+		@-webkit-keyframes glow {
+		  from {
+			text-shadow: 0 0 1px #fff, 0 0 2px #fff, 0 0 3px #fff, 0 0 4px #fff,0 0 5px #fff;
+		  }
+		  
+		  to {
+			text-shadow: 0 0 6px #fff, 0 0 7px #00BBFF, 0 0 8px #00BBFF ,0 0 9px #00BBFF,0 0 10px #00BBFF;
+		  }
+		}
+
+		
+		
+		.row{
+		padding-right:0.8em;
+		padding-left:0.8em;
+		margin-button:0.8em;}
+		
+		.legend{
+		margin:0.25em;
+		padding:0.25em;}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		/* Some media queries for responsiveness */
+		@media screen and (max-height: 450px) {
+		  .sidenav {padding-top: 15px;
+		  }
+		  .sidenav a {font-size: 18px;}
+		 }
+		 
+		
+		
+		@media only screen and (max-width:768px){
+		.sidenav{
+		  display:block;
+		  height: 100%;
+		  width:16.7%;
+		  position: absolute;
+		  z-index: 1;
+		  top: 0%;
+		  left: 0;
+		  overflow-x:hidden;		  
+		  background:linear-gradient(to right,rgba(68,68,68),rgba(136,136,136));}
+		}
+		
+		@media only screen and (min-width:768px){
+		.sidenav {
+		  height: 100%;
+		  width:16.7%;
+		  position: fixed;
+		  z-index: 1;
+		  top: 0%;
+		  left: 0;		  
+		  overflow-x:hidden;		  
+		  background:transparent;
+		}
+		}
+		
+		@media only screen and (min-width:990px){
+		#name-of-project{font-family: 'Montserrat', sans-serif;
+		font-size:5em; text-align:center;
+		}
+		}
+		
+		@media only screen and (max-width:990px){
+		#name-of-project{font-family: 'Montserrat', sans-serif;
+		font-size:3.2em; text-align:center;
+		}
+		}
+		
+		@media only screen and (min-width:990px){
+		#info{
+		font-size:1em;
+		padding-left:30px;
+		color:#DDDDDD;
+		margin-top:1.0em;}
+		}
+		
+		@media only screen and (max-width:990px){
+		#info{
+		font-size:0.75em;
+		padding-left:30px;
+		color:#DDDDDD;
+		margin-top:1.0em;}
+		}
+		
+		@media only screen and (min-width:990px){
+		.navbar-brand{
+		font-family: 'Montserrat', sans-serif;
+		color:white;
+		font-weight:bold;
+		font-size:2.5em;}
+		}
+		
+		@media only screen and (min-width:990px){
+		.nav-link{
+		font-family: 'Montserrat', sans-serif;
+		font-weight:light;
+		font-size:1.6em;}
+		}
+		
+		/*以下每個網頁都要*/
+		@media only screen and (max-width:990px){
+		.navbar-brand{
+		font-family: 'Montserrat', sans-serif;
+		color:white;
+		font-weight:bold;
+		font-size:2.5em;}
+		}
+		
+		@media only screen and (max-width:990px){
+		.nav-link{
+		font-family: 'Montserrat', sans-serif;
+		font-weight:light;
+		font-size:1.6em;}
+		}
+		
+			@media only screen and (min-width:990px){
+		#exp-intro{		
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:4.0em;
+		margin:0.8em;}
+		}
+		
+		@media only screen and (max-width:990px) and (min-width:400px){
+		#exp-intro{
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:2.5em;
+		margin:0.8em;}
+		}
+		
+		@media only screen and (max-width:400px){
+		#exp-intro{
+		font-family: 'Monoton', cursive;
+		text-align:center;
+		font-size:1.8em;
+		margin:0.8em;}
+		}
+		
+		
+		
+		.navbar{
+		overflow-y:visible;}
+		
+		#info a{
+		color:#DDDDDD;}
+		
+		.subnavdiv{
+		margin-top:0.5em;}
+		
+		
+		#loader{
+		position:fixed;
+		z-index:10000;
+		width:100%;
+		height:100%;		
+		background:rgba(0,0,0,0.6);		
+		top:50%;
+		left:50%;		
+		transform:translate(-50%,-50%);
+		transition: 0s;
+		}
+		
+		#loader img{
+		position:absolute;
+		width:100px;
+		height:100px;
+		top:50%;
+		left:50%;
+		transform:translate(-50%,-50%);
+		}
+		
+		.table{
+		
+		padding-left:1em;
+		padding-right:0em;
+		margin-right:0em;}
+		
+		table{
+		border-collapse:collapse;
+		border-spacing:0;
+		table-layout:fixed;
+		
+		}
+		
+		table td{
+		
+		text-overflow:ellipsis;
+		word-wrap:break-word;		
+		}
+		
+		@media only screen and (max-width:1200px) and (min-width:768px){
+		.adjustsize{
+		width:70%;
+		}
+		}
+		
+		@media only screen and (max-width:1200px) and (min-width:768px){
+		.adjustsize{
+		width:85%;
+		}
+		}
+		
+		@media only screen and (max-width:1200px) and (min-width:768px){
+		table{
+		font-size:0.8em;}
+		}
+		
+		@media only screen and (max-width:767px) and (min-width:450px){
+		table{
+		font-size:0.5em;}
+		}
+		
+		@media only screen and (max-width:449px){
+		table{
+		font-size:0.3em;}
+		}
+		
+		@media only screen and (min-width:768px){
+		#overview-RWD{display:none;
+		}}
+		
+		@media only screen and (max-width:768px){
+		#overview-laptop{display:none;
+		}}
+		@media only screen and (min-width:1250px){
+		#navbarNavAltMarkup{
+		font-size:1.0em;}
+		}
+		
+		@media only screen and (min-width:768px) and (max-width:1249px) {
+		#navbarNavAltMarkup{
+		font-size:0.70em;}
+		}
+		
+		.dropdown-item:hover{
+		background:#00BBFF;
+		color:white;
+		font-weight:bold;
+		}
+		
+		#border1{
+		border-color:#000000; 
+		border-style:solid;
+		border-radius: 15px;
+		margin: 5px;
+		padding-top:1em;
+				
+		}
+		
+		#border2{
+		border-color:#000000; 
+		border-style:solid;
+		border-radius: 15px;
+		margin: 5px;
+		padding-top:1em;
+		}
+		
+		#border3{
+		border-color:#000000; 
+		border-style:solid;
+		border-radius: 15px;
+		margin: 5px;
+		padding-top:1em;		
+		}
+		
+		#border4{
+		border-color:#000000; 
+		border-style:solid;
+		border-radius: 15px;
+		margin: 5px;
+		padding-top:1em;		
+		}
+		
+		#border5{
+		border-color:#000000; 
+		border-style:solid;
+		border-radius: 15px;
+		margin: 5px;
+		padding-top:1em;		
+		}
+		
+		#border6{
+		border-color:#000000; 
+		border-style:solid;
+		border-radius: 15px;
+		margin: 5px;
+		padding-top:1em;		
+		}
+		
+		#border7{
+		border-color:#000000; 
+		border-style:solid;
+		border-radius: 15px;
+		margin: 5px;
+		padding-top:1em;		
+		}
+		h5{
+		margin-top:1em;}
+		
+		.icon{
+		margin-top:1.0em;
+		margin-bottom:1.5em;}
+		
+		
+		h4{
+		padding-top:0.8em;}
+		
+		
+		section{
+		margin-bottom:50px;}
+		
+		@media only screen and (min-width:768px){
+		#other_page{display:none;
+		}}
+		
+		</style>
+		
+		
+		
+	</head>
+	<body id="home" style=cursor:url(img/whitesub.cur),auto;>
+	<div id="loader">
+	<img src="img/subgif.gif"/>
+	</div>
+	<div class="container-fluid">
+	<div class="row">
+	<div class="col-md-2">
+		
+		<div class="sidenav" style="top:10%;">
+		  <div class="subnavdiv">
+		  <div class="sidenav-head"><img src="img/subhead.png" class="img-fluid" id="submarine-head" /></div>
+		  <button class="button"><a href="#saxs" >SAXS</a></button>
+		  <button class="button"><a href="#cd">Circular Dichronism</a></button>
+		  <button class="button"><a href="#tem">TEM</a></button>
+		  <button class="button"><a href="#DLS">Dynamic Light Scattering</a></button>
+		  <button class="button"><a href="#zeta">Zeta Potential Measurement</a></button>
+		  <button class="button"><a href="#flow">Flow Cytometry</a></button>
+		  <button class="button"><a href="#cm">Confocal Microscopy</a></button>
+		  <div class="sidenav-bottom"><img src="img/subbuttom.png" class="img-fluid" id="submarine-bottom" /></div>
+		</div>
+		</div>
+		
+	
+	</div>
+	
+	<div class="col-12 col-md-10 ">
+	
+	
+	
+	
+	<div  class="container"  >
+	
+		<header id="header">
+		
+		<div class="header" >
+		
+				<div class="row d-flex  align-items-center" >
+					
+					<div class="col-12 col-md-4"><a href="./index.html"><img src="img/sign-high.png" id="logo"   class="img-fluid" width="400px"></a></div> <!--team logo於header左邊-->
+					<p id="name-of-project" class="col-12 col-md-4 glow">NCKU ONA</p>
+					
+					<dl id="info" class="col-12 col-md-4">
+					
+						<dt><i class="far fa-envelope fa-2x"></i></dt><dd><a href="mailto:weichenlin28571653@gmail.com">biomodnckuona@gmail.com</a></dd>
+						<dt><i class="fas fa-home fa-2x"></i></dt><dd>No.1, University Road, East District, Tainan, Taiwan 701 </dd>
+					
+					</dl>
+					
+					
+				</div>
+		</div>
+			
+		</header>
+		
+		<div class="contents" style="cursor:default;">
+		
+		
+		<nav class="sticky-top navbar navbar-expand-lg navbar-dark bg-dark">
+			  <a class="navbar-brand" href="#home">BIOMOD</a>
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<div class="navbar-nav">
+					<a class="nav-item nav-link" href="./index.html">Home</a>
+					<a class="nav-item nav-link " href="./biomod-video-template.html">Video</a>
+					<a class="nav-item nav-link " href="./biomod-overview-template.html">Overview</a>
+					<li class="nav-item dropdown" id="overview-laptop">
+					<a class=" nav-link active dropdown-toggle" href= id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Lab
+					</a>				
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					  <a class="dropdown-item" href="./biomod-exp-operation-template.html">Lab-Operation</a>
+					  <a class="dropdown-item" href="./biomod-exp-result-template.html">Lab-Results</a>
+					</div>
+					</li>
+					<a class="nav-item nav-link" id="other_page" href="./biomod-exp-result-template.html">Lab-Results</a>
+					<li class="nav-item dropdown" id="overview-RWD">
+					<a class=" nav-link active dropdown-toggle" href= id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Lab-Operation
+					</a>				
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+					 
+					  <a class="dropdown-item" href="#saxs">SAXS</a>
+					  <a class="dropdown-item" href="#cd">Circular Dichroism</a>
+					  <a class="dropdown-item" href="#tem">TEM</a>
+					  <a class="dropdown-item" href="#DLS">Dynamic Light Scattering </a>
+					  <a class="dropdown-item" href="#zeta">Zeta Potential Measurement</a>
+					  <a class="dropdown-item" href="#flow">Flow Cytometry</a>
+					  <a class="dropdown-item" href="#cm">Confocal Microscopy</a>
+					  
+					</div>
+					</li>
+					<a class="nav-item nav-link" href="./biomod-future-template.html">Future</a>
+					<a class="nav-item nav-link" href="./biomod-team-template.html">Members</a>
+					<a class="nav-item nav-link" href="./biomod-sponsors-template.html" >Sponsors</a>
+					
+				</div>
+			  </div>
+		</nav>
+	
+		
+		
+	
+		
+		
+		
+		
+		
+					
+		
+		<div id="contents" >
+				
+					<main id="main">
+							
+							<div class="row">
+							<div class="col-12">
+							<p id="exp-intro">Lab-Operation</p>
+							</div>
+							</div>
+							
+							<section id="saxs" style="margin-top:50px;">
+							
+							<div class="row">
+							<div class="col-12">
+							<h3><b>1. Small Angle X-ray Scattering (SAXS)</b></h3>
+							</div>
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>1-1. Outlines</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row"  id="border1" >
+							<div class="col-12">
+							<p>(1) X-ray scattering techniques reveal information about sizes, shapes, and internal structures of ordered systems. </p>
+							<p>(2) The sample information are collected by observing the scattering intensity of X-ray beam after hitting a sample, which can be further analyzed as a function of scattered angle, wavelength, and polarization.</p>
+							<p>(3) For the small-angle X-ray scattering, it can be used to study the properties of biological macromolecules such as DNA and proteins.</p>
+							<p>(4) With SAXS, we can obtain several parameters of sample such as shape, size, crystallinity, porosity, and orientation.</p>
+							</div>
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>1-2. Basic principle</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<p>From Bragg's Law : </p>
+							<p><b>sinθ = λ/2d</b></p>
+							<p>Since biological macromolecules such as polymers exhibit typical distances (d) around 100 Å, the corresponding scattering angle 2θ is much smaller, typically 0.5°. All structural information is in a small angular range - which is why the technique is called "small-angle scattering".</p>
+							<p >A SAXS result is collected to the total scattering intensity I(q) as a function of the scattering vector q, q=4πsinθ/λ can be expressed by:</p>
+							<p><b>I(q)=Np(∆ρ)<sup>2</sup>Vp<sup>2</sup>P(q)S(q)</b></p>
+							<p>Where 
+							P(q) is the form factor describing the scattering from a single particle in dependence on its size and shape.
+							The intensity is plotted against the scattering vector q, providing information about size, shape, and surface. The form factor, directly proportional to the intensity for dilute solutions, reveals information about the shape lying in the oscillating part in the middle section of the curve from the Fourier transform of the real-space density distribution (Figure 1). 
+							</p>
+							</div>
+							
+							
+							</div>
+							
+							<div class="col-12 col-lg-6">
+							<div>
+							<img class="adjustsize" src="img/op1.png" style="padding:0.5em; margin-left:0.5em;" class="img-responsive"/>
+							
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p><b>Figure 1.</b>Schematic of the information on size, shape, and surface of particles through data-processing method from SAXS.
+							From the plot for shape information, we can predict the shape of particles by the slope (Figure 2)
+							</p>
+							</div>
+							</div>
+							
+							<div class="col-12 col-lg-6" >
+							<div>
+							<img class="adjustsize" src="img/op2.png" style="padding:0.5em; margin-left:0.5em; margin-top:1em;" class="img-responsive"/>
+							
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p><b>Figure 2.</b> The SAXS plot for shape information. For spherical particle, the slope of the plot is equal to -4, and 1 for a thin rod, 2 for a thin disk.</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+								<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+							</div>
+							</div>
+							</section>
+							
+							<section id="cd">
+							
+							<div class="row">
+							<div class="col-12">
+							<h3><b>2. Circular Dichroism (CD)</b></h3>
+							</div>
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>2-1. Outlines</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row"  id="border2" >
+							<div class="col-12">
+							<p>(1) Circular dichroism (CD) spectroscopy is a spectroscopic technique used to study chiral molecules, especially for biological macromolecules. </p>
+							<p>(2) When a molecule contain chiral chromophores, known as light-absorbing groups, the absorption of left‐handed circularly polarized light (L‐CPL) and right‐handed circularly polarized light (R‐CPL) will be different.</p>
+							<p>(3) The difference of absorption is showed as ΔA(λ) = A(λ)<sub>LCPL</sub>‐ A(λ)<sub>RCPL</sub>, where λ is the wavelength.</p>
+							<p>(4) It has been widely used in biochemistry in the understanding of chiral molecules such as protein and DNA.</p>
+							</div>
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>2-2. Basic principle</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<h5><b>(1) A Basic of Polarization</b></h5>
+							<p>A natural light is an electromagnetic wave oscillating in all directions perpendicular to the direction of propagation, referred to as “unpolarized light”. When an unpolarized incident beam passes through a polarizer, it emerges as a linear polarized light. (Figure 3)</p>
+							
+							</div>
+							
+							
+							</div>
+							
+							<div class="col-12 col-lg-6">
+							<div>
+							<img class="adjustsize" src="img/op3.png" style="padding:0.5em; margin-left:0.5em;" class="img-responsive"/>
+							
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p><b>Figure 3.</b> Polarization of light. When the electric field vectors are restricted to a plane by a polarizer, the light is polarized.</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<h5><b>(2) Circular Dichroism Instrument </b></h5>
+							<p>The light first passes through the linear polarizer and becomes polarized, which then later passes through the photoelastic modulator (PEM) producing +90° and -90° retardation alternately by an oscillator to obtain both left‐hand circularly polarized light (LCP) and right‐hand circularly polarized light(RCP). The CD active medium will switch direction of polarization to different extent, resulting in different absorption. The differential molar absorptivity can be calculated (Figure 4). </p>
+							</div>
+							
+							
+							</div>
+							
+							<div class="col-12 col-lg-6" >
+							<div>
+							<img class="adjustsize" src="img/op4.png" style="padding:0.5em; margin-left:0.5em; margin-top:1em;" class="img-responsive"/>
+							
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p><b>Figure 4.</b> Schematics of a circular dichroism instrument showing the differential absorption of left‐hand circularly polarized light (LCP) and right‐hand circularly polarized light (RCP).</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<h5><b>(3) Chiral Molecules</b></h5>
+							<p style="margin-bottom:0.5em;">A chiral molecule is not superimposable on its mirror image either by flipping or changing direction, like our hands. The mirror images of a chiral molecule are called enantiomers or optical isomers, which cannot be distinguished by chemical method but optical. </p>
+							<p>The concept of chirality is of great importance since most biomolecules are chiral such as proteins and DNA.</p>
+							</div>
+							
+							
+							</div>
+							
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<h5><b>(4) Chiral Molecules versus Circularly Polarized Light</b></h5>
+							<p>A chiral molecule exhibits circular birefringence, which means it gives the left‐hand and right‐hand circularly polarized light two different speeds. This makes two polarized lights rotate at different degree, which is called optical rotation. 
+							In circular dichroism, it only occurs at wavelength of light absorbed by chiral molecules but that rotated. In this case, the left‐hand and right‐hand circularly polarized light are absorbed by a chiral chromophore at different extents, giving different absorption known as ΔA in CD spectrum.
+							</p>
+							</div>
+							
+							
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<h5><b>(5) Secondary Structures in CD spectra</b></h5>
+							<p>The CD spectra is widely applied in the study of secondary structures of protein such as α‐helix and the β sheet. The following table shows three typical secondary structures appears in CD spectra.</p>
+							</div>
+							
+							
+							</div>
+							
+							<div class="row table" >
+							
+							<table border="2" class="col-12" align="left">
+							<tr>
+							<td width="12%" bgcolor=lightblue><b>α‐helix</b></td>
+							<td >α‐helix displays a strong positive signal around 190nm, and two negative bands around 208 and 222nm. It only indicates that there are aromatic groups in the compound.</td>
+							</tr>
+							
+							<tr>
+							<td width="12%" bgcolor=lightblue><b>β-sheet</b></td>
+							<td>β sheet shows a positive band around 195nm and negative bands around 180nm and 217nm with weaker signal as a whole. It’s used for discussion in degree of distortion of β sheet.</td>
+							</tr>
+							
+							<tr>
+							<td width="12%" bgcolor=lightblue><b>Random-coil</b></td>
+							<td>Random coil is characterized by the presence of a negative band around 200nm, which is the most easily recognized structure.</td>
+							</tr>
+							
+							
+							</table>
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							
+							<p>Here shows some of common secondary structural elements and associated CD spectra in the wavelength range of 180-250nm typically. (Figure 5)</p>
+							</div>
+							
+							
+							</div>
+							
+							<div class="row">
+							<div class="col-12 col-lg-6" >
+							<div>
+							<img class="adjustsize" src="img/op5.png" style="padding:0.5em; margin-left:0.5em; margin-top:1em;" class="img-responsive"/>
+							
+							</div>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p><b>Figure 5.</b> Some typical secondary structures in CD spectra. [θ] is molar ellipticity, representing the angle between the magnitude of the electric field vector at its maximum and its minimum from the absorption difference of LCP and RCP.</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+								<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+							</div>
+							</div>
+							</section>
+							
+							
+							<section id="tem">
+							
+							<div class="row">
+							<div class="col-12">
+							<h3><b>3. Transmission Electron Microscopy (TEM)</b></h3>
+							</div>
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>3-1. Outlines</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row"  id="border3" >
+							<div class="col-12">
+							<p>(1) A microscopy technique forms an image by a high energy electron beam transmitting through a very thin sample.</p>
+							<p>(2) The TEM image is formed from the interaction between electrons and the atoms of the sample, which scatter after collision.</p>
+							<p>(3) The angle of scattering is dependent on the size, density, and thickness of sample, and therefore produce a contrast TEM image.</p>
+							<p>(4) Owing to the smaller wavelength of electrons than other lights, TEM have many orders of magnitude higher resolution than optical microscopies.</p>
+							</div>
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>3-2. Basic principle</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<h5><b>(1) Use of electrons</b></h5>
+							<p>Generally, the maximum resolution, d, is defined by: d=λ/(2n sinα). However, the resolution of a traditional optical microscopy is limited by the wavelength λ of the photons.</p>
+							<p>Like all matters, electron have both particle and wave properties known as “Wave–particle duality”, which owns de Broglie wavelength described as λ=h/p. Where h is Planck’s constant and p is a particle’s momentum. By controlling the velocity of electron at high speed, TEM are capable of high resolution images.</p>
+							
+							</div>
+							
+							
+							</div>
+							
+														
+							
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<h5><b>(2) Imaging</b></h5>
+							<p>The imaging principle of a transmission electron microscope can be divided into three cases:</p>
+							<p><b>(2-1) Absorption image</b>: When electrons are injected into a sample of high mass and density, the image is mainly formed by scattering. A sample of higher density results in a larger scattering angle of electrons, making the electrons passing through are less, and the brightness of the image is darker. Traditional transmission electron microscopy was based on this principle.</p>
+							<p><b>(2-2) Diffraction image</b>: After the electron beam is diffracted by the sample, the diffraction wave amplitude distribution corresponds to different diffraction ability of each part of the crystal in the sample. When crystal defects occur, the diffraction ability of the defect portion is different from the complete region. Therefore, the amplitude distribution of the diffracted waves reflects the distribution of crystal defects.</p>
+							<p><b>(2-3) Phase image</b>: When the sample is as thin as 100Å or less, electrons can pass through the sample, which makes the amplitude of the wave changes negligibly. In this case, the image comes from the phase change.</p>
+							</div>
+							
+							
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<h5><b>(3) SEM versus TEM</b></h5>
+							<p>The main difference between SEM and TEM is that the electron beam excites the surface secondary electrons for SEM while penetrates through the sample for TEM to create an image. As a result, SEM provides information on the sample’s surface and its composition, while TEM reveals information on the inner structure of the sample, such as morphology, crystal structure, and stress state information.</p>
+							</div>
+							</div>
+							
+							
+							
+							<div>
+							
+														
+							<div class="row">
+							<div class="col-12">
+								<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+							</div>
+							</div>
+							</section>
+							
+							
+							<section id="DLS">
+							
+							<div class="row">
+							<div class="col-12">
+							<h3><b>4. Dynamic Light Scattering (DLS)</b></h3>
+							</div>
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>4-1. Outlines</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row"  id="border4" >
+							<div class="col-12">
+							<p>(1) A technique to analyze dynamic properties and size distribution profile of small particles in solution or suspension.</p>
+							<p>(2) The particle size of the sample is not measured directly but is based on the movement of the particles.</p>
+							<p>(3) The sample size can be measured down to 1 nm diameter, which is determined by the Stokes-Einstein equation from scattering signal.</p>
+							<p>(4) Since the measured molecules are not fixed in solution, the result of the measurement is the collective average effect of all molecules in solution, which is why it’s called “dynamic”.</p>
+							<p>(5) When light hits small particles that the size is much smaller than its wavelength, the light scatters in all directions (Rayleigh scattering), resulting in different scattering effects for different size and shape of molecules.</p>
+							</div> 
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>4-2. Basic principle</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<h5><b>(1) Theory</b></h5>
+							<p>If the source is a laser, we can observe that the intensity of the scattered light fluctuates with time. This is because the tiny particles in the solution are doing Brownian motion and the distance between each scattering particle always changes with time. Scattered light from different particles produces constructive or destructive interference due to phase differences. The resulting curve of intensity fluctuation over time carries information that causes the scattered particles to move over time.</p>
+							<p>By CUMULANT method, the average particle size and width of the particle size distribution from a Dynamic Light Scattering (DLS) measurement are determined. 
+							In all the DLS experiments, the particle radius R is computed from the diffusion coefficient D:
+							</p>
+							<p style="text-align:center;">D=k<sub>B</sub>T/6πηR</p>
+							<p>Where kB is the Boltzmann constant, T is the temperature and η is the viscosity.</p>
+							</div>
+							
+							
+							</div>
+							
+							
+							<div class="row">
+							<div class="col-12 col-lg-6" >
+							<div>
+							<img class="adjustsize" src="img/op6.png" style="padding:0.5em; margin-left:0.5em; margin-top:1em;" class="img-responsive"/>
+							
+							</div>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							
+							<p>A single frequency laser is directed to the sample while keeps a specific angle with the detector. The incident laser light gets scattered in all directions by the particles in solution. The scattered light is detected at a certain angle as a function of time and the signal is further analyzed to obtain the diffusion coefficient and the particle size by the Stokes-Einstein equation. 
+								The detection angle is chosen depending on the turbidity of the sample, typically at 15°, 90°, and 175°. (Figure 6)
+							</p>
+							</div>
+							</div>
+							
+							
+							<div class="row">
+							<div class="col-12">
+							<p><b>Figure 6.</b>Schematics of the Dynamic Light Scattering measurement system. The incident laser light is scattered by the sample and can be further detected at different angle.</p>
+							</div>
+							</div>
+							
+							
+							
+														
+							<div class="row">
+							<div class="col-12">
+								<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+							</div>
+							</div>
+							</section>
+							
+							
+							<section id="zeta">
+							
+							<div class="row">
+							<div class="col-12">
+							<h3><b>5. Zeta Potential Measurement</b></h3>
+							</div>
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>5-1. Outlines</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row"  id="border5" >
+							<div class="col-12">
+							<p>(1) Zeta potential refers to the static voltage induced by ions accumulated on the colloidal particles, referred as the charge on a particle at the shear plane.</p>
+							<p>(2) It is the surface charge on a particle useful for understanding interactions between particles in suspension.</p>
+							<p>(3) Zeta potential cannot be measured directly but calculated using theoretical models, electrophoretic mobility or dynamic electrophoretic mobility.</p>
+							<p>(4) One of the main purposes of Zeta potential is to study the interaction between gel and electrolyte.</p>
+							</div> 
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>5-2. Basic principle</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<h5><b>(1) Theory</b></h5>
+							<p>Zeta potential values provide an indirect measurement of the net charge on the nanoparticles (NPs) surface, which influence the physical state of nanoparticles such as stability and absorption, and thus the interactions in biological system. As a result, the zeta potential value is of great concern in biomedical applications.</p>
+							<p>The significance of the Zeta potential is that it’s related to the stability of the colloidal dispersion. Zeta potential is a measure of the strength of repulsion or attraction between particles. The smaller the molecular or dispersed particles are, the higher is the absolute value of the zeta potential, and the more stable is the system. On the other hand, when the zeta potential is lower, it’s more prone to coagulation or agglomeration since the attraction exceeds the repulsive force.</p>
+							<p>When a charged nanoparticle is dispersed in a liquid, a layer of ions of opposite charge bound to their surface forming a thin layer known as the “Stern layer”. The Stern layer then induces the formation of a second diffuse outer layer, composed by loosely associated ions that is called “diffusive ion layer”. These two layers are called “the electrical double layer”. When the NPs move in the liquid phase, there exists a boundary called “slipping plane”. The electrostatic potential at this “slipping plane” boundary is the zeta potential. (Figure 7)</p>
+							
+							</div>
+							
+							
+							</div>
+							
+							
+							<div class="row">
+							<div class="col-12 col-lg-6" >
+							<div>
+							<img class="adjustsize" src="img/op7.png" style="padding:0.5em; margin-left:0.5em; margin-top:1em;" class="img-responsive"/>
+							
+							</div>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p><b>Figure 7.</b>Diagram of the zeta potential on a nanoparticle at the shear plane. It shows the potential difference as a function of distance from a charge particle in dispersion.</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<h5><b>(2) Measurement</b></h5>
+							<p>An electrical field is applied across the sample, inducing the movement of charged particles in the measurement of the zeta potential. The ratio between the particle velocity and the external applied field, known as electrophoretic mobility (μe), is converted to the zeta potential (z) using the Henry’s equation:</p>
+							<p style="text-align:center;">μ<sub>b</sub>=2ϵzf(kα)/3n</p>
+							<p style="margin-top:1em margin-bottom:0;">Where:</p>
+							<p style="margin-bottom:0;">μ<sub>b</sub>= electrophoretic mobility</p>
+							<p style="margin-bottom:0;">z = zeta potential</p>
+							<p style="margin-bottom:0;">ε = dielectric constant</p>
+							<p style="margin-bottom:0;">η= viscosity</p>
+							<p style="margin-bottom:0;">f(kα) is  Henry’s function</p>
+							<p style="margin-bottom:0;">α= particle radius</p>
+							</div>
+							
+							
+							</div>
+							
+														
+							<div class="row">
+							<div class="col-12">
+								<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+							</div>
+							</div>
+							</section>
+							
+							
+							<section id="flow">
+							
+							<div class="row">
+							<div class="col-12">
+							<h3><b>6. Flow cytometry</b></h3>
+							</div>
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>6-1. Outlines</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row"  id="border6" >
+							<div class="col-12">
+							<p>(1) A cell-biology technique to analyze chemical and physical characteristics of cells or particles in suspension, providing information on large population of cells rapidly and accurately.</p>
+							<p>(2) Quantifiable cell data can be obtained including cell volume, morphology complexity, cell surface antigen with CD marker, etc.</p>
+							<p>(3) Additional cell information such as antigens on surface can also be detected by tagged with fluorescence dyes.</p>
+							<p>(4) Cells pass through the laser beam only one at a time, scattering light as forward scatter (FS) and side scatter (SS) that is proportional to cell size and the granularity, respectively.</p>
+							<p>(5) Fluorescence-tagged antibody detecting proteins or ligands may also emit fluorescent light after excited by a compatible wavelength laser.</p>
+							</div> 
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>6-2. Basic principle</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<h5><b>(1) Instrument</b></h5>
+							
+							</div>						
+							</div>
+							
+							
+							
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<p>Cells first run through the cytometry, which are then hydrodynamically focused by sheath fluid that aligned cells one by one by controlling fluid pressure. In this case, cells are able to pass through the laser light source one at a time.
+							Upon hitting the cell, the light is either scattered or emitting fluorescence light. (Figure 8)
+							</p>
+							</div>						
+							</div>
+							
+							<div class="row">
+							<div class="col-12 col-lg-6" >
+							<div>
+							<img class="adjustsize" src="img/op8.png" style="padding:0.5em; margin-left:0.5em; margin-top:1em;" class="img-responsive"/>
+							
+							</div>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p><b>Figure 8.</b>Schematics of the principle of the flow cytometry. The sample is running through the cytometry and be detected once a time.</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<h5><b>(2) Data Acquisition</b></h5>
+							<p>After a cell passes through the laser beam, side and forward scattered light and fluorescence are split and channeled by several filters and mirrors in order to collect different signals separately.</p>
+							<p>As a fluorescent cell pass through the laser beam, it creates a peak of emission intensity on a time scale, called as an event. The peak area is then added for each time of the pulse. As a result, the data could show at which fluorescent intensity the events express more. (Figure 9)</p>
+							</div>
+							
+							
+							</div>
+							
+							<div class="row">
+							<div class="col-12 col-lg-6" >
+							<div>
+							<img class="adjustsize" src="img/op9.png" style="padding:0.5em; margin-left:0.5em; margin-top:1em;" class="img-responsive"/>
+							
+							</div>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p><b>Figure 9.</b>The plot of the flow cytometry indicating the events against the fluorescent intensity. The result shown on the left has a larger number of events at low fluorescence intensity, while the result shown on the right has many events at high fluorescence intensity.</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+								<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+							</div>
+							</div>
+							</section>
+							
+							<section id="cm">
+							
+							<div class="row">
+							<div class="col-12">
+							<h3><b>7. Confocal Microscopy</b></h3>
+							</div>
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>7-1. Outlines</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row"  id="border7" >
+							<div class="col-12">
+							<p>(1) Confocal microscopy provides a higher resolution of microscopic images compared to the conventional fluorescent microscopy.</p>
+							<p>(2) It’s widely used in biomedical applications to image either fixed or living cells and tissues labeled with fluorescent probes.</p>
+							<p>(3) It improves the image quality by utilizing a pinhole at the confocal plane to block the non-focal fluorescent stray light into the detector, solving the non-focal light interference problem of the traditional microscopy.</p>
+							<p>(4) Messages of fluorescent samples are acquired with point by point scanning to form the optical images.</p>
+							</div> 
+							</div>
+							
+							<div class="row" style="padding-top:1em;">
+							<div class="col-12">
+							<h4><b><u>7-2. Basic principle</u></b></h4>
+							</div>		
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<h5><b>(1) Instrument</b></h5>
+							
+							</div>						
+							</div>
+							
+							
+							<div class="row">
+							<div class="col-12 col-lg-6" >
+							<div>
+							<img class="adjustsize" src="img/op10.png" style="padding:0.5em; margin-left:0.5em; margin-top:1em;" class="img-responsive"/>
+							
+							</div>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+							<p><b>Figure 10.</b>  Schematics of the excitation and emission of the Confocal Microscopy.</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<p>The light emitted from a point source is focused by the lens onto the sample to be observed. If the object is in focus, the emitted light should be exactly focused back to the source through the original lens. This is called confocal. For confocal microscopy, a dichroic mirror is added to the emitted light path, and deflects the emitted light into the other direction with a pinhole on its focus. Through the set of confocal systems, the out-of-focus light won’t be able to pass through the pinhole and hence be blocked by the baffle. The photometer then measures the intensity of the emitted light at the focus. The significant feature is that the observed object can be scanned in three dimensions by moving the lens system. 
+							</p>
+							</div>						
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<h5><b>(2) Comparison of Conventional fluorescent Microscopy to Confocal Microscopy</b></h5>
+							
+							</div>
+							
+							
+							</div>
+							
+							
+							<div class="row">
+							<div class="col-12 col-lg-6" >
+							<div>
+							<img class="adjustsize" src="img/op11.png" style="padding:0.5em; margin-left:0.5em; margin-top:1em;" class="img-responsive"/>
+							
+							</div>
+							</div>
+							</div>
+							
+							<div class="row">
+							<div class="col-12 col-lg-6" >
+							<div>
+							<img class="adjustsize" src="img/op9.png" style="padding:0.5em; margin-left:0.5em; margin-top:1em;" class="img-responsive"/>
+							
+							</div>
+							</div>
+							</div>
+							
+							
+							
+							<div class="row">
+							<div class="col-12">
+							<p><b>Figure 11.</b> Schematics of the conventional fluorescent microscopy and the confocal Microscopy.</p>
+							</div>
+							</div>
+							
+							<div class="row">
+							
+							<div class="col-12">
+							<p>For the <b>conventional fluorescent microscopy</b>, the first filter selects the light which will excite chromophores contained in the sample. When the chromophores are illuminated by a proper wavelength (shown in blue), they emit a fluorescent light of another wavelength (shown as green).The second filter only selects the wavelength emitted by the sample and is detected to form the images. However, chromophores that appear away from the region of interest often interfere with the resolution of those features that are in focus.</p>
+							<p> As for the <b>confocal microscopy</b>, two pinhole apertures are located at confocal positions. The light is focused by the first pinhole on only a small part of the sample. After passing through the dichroic mirror, the emitted light from the target point of the sample is selected by the second pinhole. Thus the objective only collects this light. The surface of the sample is then scanned by moving either the sample or the light beam. By moving horizontally and vertically, a three-dimensional image of the sample can be reconstructed with a good spatial resolution.</p>
+							<p>In a conventional microscopy, the entire specimen is bathed in light, and the image can be viewed directly by eyes or projected directly onto a photographic film. In contrast, the image formation in a confocal microscopy is fundamentally different. The illumination is achieved by scanning one or more focused beams of light, usually from a laser, across the specimen.</p>
+							</div>						
+							</div>
+							
+							<div class="row">
+							<div class="col-12">
+								<p class="icon"><a href="#top">Back to top&nbsp&nbsp<i class="fas fa-angle-double-up"></i></a></p>
+							</div>
+							</div>
+							</section>
+							
+							
+					
+				</main>
+			</div>
+		</div>	
+		
+		</div>
+		
+				<footer id="footer" >
+			<div>
+				<p>© 2019 by NCKU-BIOMOD. Animation credits to Rachel Smith and Lucas Bedder.</p>
+			</div>
+			
+		</footer>
+		</div>
+		
+		</div>
+		</div>
+		
+		<script>
+		var loader = document.getElementById("loader");
+		window.addEventListener("load",function(){
+		loader.style.height="100%";
+		loader.style.width="100%";
+		loader.style.visibility="hidden";
+		});	
+		</script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/solid.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/regular.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.0/js/fontawesome.js"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>		
+		<script>
+		/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+		var dropdown = document.getElementsByClassName("dropdown-btn");
+		var i;
+
+		for (i = 0; i < dropdown.length; i++) {
+		  dropdown[i].addEventListener("click", function() {
+		  this.classList.toggle("active");
+		  var dropdownContent = this.nextElementSibling;
+		  if (dropdownContent.style.display === "block") {
+		  dropdownContent.style.display = "none";
+		  } else {
+		  dropdownContent.style.display = "block";
+		  }
+		  });
+		}
+		</script>
+		
+	</body>
+</html>
